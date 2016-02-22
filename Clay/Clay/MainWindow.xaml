@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        WindowStartupLocation="CenterScreen"
+        Title="Gestion de Production" Height="800" Width="1200" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <BitmapImage x:Key ="Logo" UriSource="/Images/logo.png" />
+    </Window.Resources>
     <Grid>
-        
+        <Separator HorizontalAlignment="Left" Height="25" Margin="10,44,0,0" VerticalAlignment="Top" Width="1174"/>
+        <Image x:Name="logo" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" VerticalAlignment="Top" Width="38" Source="{StaticResource ResourceKey=Logo}"/>
+        <Label x:Name="title" Content="Gestion de production" FontFamily="Verdana" HorizontalAlignment="Left" Margin="53,20,0,0" VerticalAlignment="Top" Width="281" FontWeight="Bold" FontStyle="Italic"/>
+        <Grid HorizontalAlignment="Left" Height="373" Margin="33,74,0,0" VerticalAlignment="Top" Width="236">
+            <Border BorderBrush="Black" BorderThickness="1" Margin="0,16,-16,0"/>
+            <Label  x:Name="Lot" Content="Lot" Margin="10,40,197,308"/>
+            <ComboBox x:Name="LotDropDown"  Margin="100,45,-4,308"/>
+            <Label x:Name="Quality" Content="Quality" Margin="10,161,171,183"/>
+            <ComboBox x:Name="QualityDropDown" Margin="100,161,-4,192" Height="20"/>
+            <Label x:Name="Layout" Content="Layout" Margin="10,122,179,227"/>
+            <ComboBox x:Name="LayoutDropDown" Margin="100,126,-4,227" Height="20"/>
+            <Label x:Name="Component" Content="Component" Margin="10,82,153,265"/>
+            <ComboBox x:Name="ComponentDropDown" Margin="100,82,-4,271"/>
+            <Label x:Name="Performance" Content="Performance" Margin="10,195,141,154"/>
+            <ComboBox x:Name="PerformanceDropDown" Margin="100,199,-4,154" Height="20"/>
+            <Button x:Name="Reset" Content="Réinitialiser" Width="80" Height="20" Margin="141,258,15,95" />
+            <Button x:Name="Valider" Content="Valider" Width="80" Height="20" Margin="29,258,127,95" />
+            <Button x:Name="Graphique" Content="Graphique" Margin="29,305,15,27" />
+        </Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="322,90,0,0" VerticalAlignment="Top" Height="619" Width="810">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Lot"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Date" HeaderStringFormat=""/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Component"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="ColorBound"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Pressure"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Offset"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Quality"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Performance"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
+
 </Window>
