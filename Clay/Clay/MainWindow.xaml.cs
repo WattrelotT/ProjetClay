@@ -24,5 +24,29 @@ namespace Clay
         {
             InitializeComponent();
         }
+
+        private void Graphique_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Valider_Click(object sender, RoutedEventArgs e)
+        {
+            List<Data.Datas> MalistDeData = new List<Data.Datas>();
+            ParseurXml MonParseurXml = new ParseurXml();
+            MalistDeData = MonParseurXml.LectureXML("C:/Users/eithi/Desktop/TEST.xml");
+            Console.WriteLine();
+
+            dataGrid.DataContext = MalistDeData;
+            foreach(Data.Datas item in dataGrid.ItemsSource)
+            {
+                var row = dataGrid.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
+                if(item.quality == "low")
+                {
+                    row.Background = Brushes.Pink;
+                }
+            }
+           // dataGrid.DataContext = MalistDeData;
+        }
     }
 }

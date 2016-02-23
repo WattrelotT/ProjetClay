@@ -20,6 +20,7 @@ namespace Clay
             public int result { get; set; }
             public int timecode { get; set; }
             public string lot { get; set; }
+            public DateTime date { get; set; }
         }
     }
 }

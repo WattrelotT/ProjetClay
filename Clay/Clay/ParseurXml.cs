@@ -45,6 +45,9 @@ namespace Clay
                     MesData.timecode = -1;
                 }
 
+                MesData.date = DateTime.Parse(data.Parent.FirstAttribute.Value).Date;
+                //string test = MesData.date.ToString("d");
+
                 MaListData.Add(MesData);
             }
 
