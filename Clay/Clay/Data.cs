@@ -16,7 +16,7 @@ namespace Clay
             public string component { get; set; }
             public string colorbound { get; set; }
             public string quality { get; set; }
-            public string perfomance { get; set; }
+            public string performance { get; set; }
             public int result { get; set; }
             public int timecode { get; set; }
             public string lot { get; set; }

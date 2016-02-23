@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Clay.Properties;
+using System.Windows.Controls.Primitives;
 
 namespace Clay
 {
@@ -30,23 +32,37 @@ namespace Clay
             
         }
 
+        private void columnHeader_Click(object sender, RoutedEventArgs e)
+        {
+            var columnHeader = sender as DataGridColumnHeader;
+            if (columnHeader != null)
+            {
+                Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
+            }
+        }
         private void Valider_Click(object sender, RoutedEventArgs e)
         {
+            InitializeComponent();
             List<Data.Datas> MalistDeData = new List<Data.Datas>();
             ParseurXml MonParseurXml = new ParseurXml();
-            MalistDeData = MonParseurXml.LectureXML("C:/Users/eithi/Desktop/TEST.xml");
-            Console.WriteLine();
-
+            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Alexandre\Documents\GitHubVisualStudio\ProjetClay\Clay\Clay\Resources\lot.xml" );
             dataGrid.DataContext = MalistDeData;
-            foreach(Data.Datas item in dataGrid.ItemsSource)
+            Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
+            
+           // dataGrid.DataContext = MalistDeData;
+        }
+
+        private void ProcessRows()
+        {
+
+            foreach (Data.Datas item in dataGrid.ItemsSource)
             {
                 var row = dataGrid.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
-                if(item.quality == "low")
+                if (item.quality == "Low")
                 {
                     row.Background = Brushes.Pink;
                 }
             }
-           // dataGrid.DataContext = MalistDeData;
         }
     }
 }

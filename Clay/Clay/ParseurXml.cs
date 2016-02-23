@@ -25,7 +25,7 @@ namespace Clay
                 MesData.component = data.Element("component").Value.ToString();
                 MesData.colorbound = data.Element("colorbound").Value.ToString();
                 MesData.quality = data.Element("quality").Value.ToString();
-                MesData.perfomance = data.Element("performances").Value.ToString();
+                MesData.performance = data.Element("performance").Value.ToString();
                 MesData.result = data.Element("result").Value == "" ? 0 : int.Parse(data.Element("result").Value);
                 if (data.Attribute("lot") != null)
                 {

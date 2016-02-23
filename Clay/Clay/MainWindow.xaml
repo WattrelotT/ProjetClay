@@ -31,15 +31,20 @@
             <Button x:Name="Graphique" Content="Graphique" Margin="29,305,15,27" Click="Graphique_Click" />
         </Grid>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="322,90,0,0" VerticalAlignment="Top" Height="619" Width="810" ItemsSource="{Binding}" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <EventSetter Event="Click" Handler="columnHeader_Click" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding lot}" Header="Lot"/>
-                <DataGridTextColumn Binding="{Binding date}" Header="Date" HeaderStringFormat=""/>
+                <DataGridTextColumn Binding="{Binding date}" Header="Date"/>
                 <DataGridTextColumn Binding="{Binding component}" Header="Component"/>
                 <DataGridTextColumn Binding="{Binding colorbound}" Header="ColorBound"/>
                 <DataGridTextColumn Binding="{Binding pressure}" Header="Pressure"/>
                 <DataGridTextColumn Binding="{Binding offset}" Header="Offset"/>
                 <DataGridTextColumn Binding="{Binding quality}" Header="Quality"/>
-                <DataGridTextColumn Binding="{Binding performances}" Header="Performance"/>
+                <DataGridTextColumn Binding="{Binding performance}" Header="Performance"/>
                 <DataGridTextColumn Binding="{Binding result}" Header="Result"/>
                 <DataGridTextColumn Binding="{Binding layout}" Header="Layout"/>
                 <DataGridTextColumn Binding="{Binding timecode}" Header="TimeCode"/>
