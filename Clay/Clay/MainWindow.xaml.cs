@@ -45,7 +45,7 @@ namespace Clay
             InitializeComponent();
             List<Data.Datas> MalistDeData = new List<Data.Datas>();
             ParseurXml MonParseurXml = new ParseurXml();
-            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Alexandre\Documents\GitHubVisualStudio\ProjetClay\Clay\Clay\Resources\lot.xml" );
+            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml");
             dataGrid.DataContext = MalistDeData;
             Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
             

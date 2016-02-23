@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ClayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Data">
+          <Key>
+            <PropertyRef Name="offset" />
+          </Key>
+          <Property Name="offset" Type="int" Nullable="false" />
+          <Property Name="pressure" Type="int" Nullable="false" />
+          <Property Name="layout" Type="int" Nullable="false" />
+          <Property Name="component" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="colorbound" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="quality" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="performance" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="result" Type="int" Nullable="false" />
+          <Property Name="timecode" Type="int" Nullable="false" />
+          <Property Name="lot" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ClayModelStoreContainer">
+          <EntitySet Name="Data" EntityType="Self.Data" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ClayModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Data">
+          <Key>
+            <PropertyRef Name="offset" />
+          </Key>
+          <Property Name="offset" Type="Int32" Nullable="false" />
+          <Property Name="pressure" Type="Int32" Nullable="false" />
+          <Property Name="layout" Type="Int32" Nullable="false" />
+          <Property Name="component" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="colorbound" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="quality" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="performance" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="result" Type="Int32" Nullable="false" />
+          <Property Name="timecode" Type="Int32" Nullable="false" />
+          <Property Name="lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="ClayEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Data" EntityType="Self.Data" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ClayModelStoreContainer" CdmEntityContainer="ClayEntities">
+          <EntitySetMapping Name="Data">
+            <EntityTypeMapping TypeName="ClayModel.Data">
+              <MappingFragment StoreEntitySet="Data">
+                <ScalarProperty Name="offset" ColumnName="offset" />
+                <ScalarProperty Name="pressure" ColumnName="pressure" />
+                <ScalarProperty Name="layout" ColumnName="layout" />
+                <ScalarProperty Name="component" ColumnName="component" />
+                <ScalarProperty Name="colorbound" ColumnName="colorbound" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="performance" ColumnName="performance" />
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="timecode" ColumnName="timecode" />
+                <ScalarProperty Name="lot" ColumnName="lot" />
+                <ScalarProperty Name="date" ColumnName="date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

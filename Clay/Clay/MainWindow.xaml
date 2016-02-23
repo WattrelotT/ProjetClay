@@ -14,21 +14,23 @@
         <Separator HorizontalAlignment="Left" Height="25" Margin="10,44,0,0" VerticalAlignment="Top" Width="1174"/>
         <Image x:Name="logo" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" VerticalAlignment="Top" Width="38" Source="{StaticResource ResourceKey=Logo}"/>
         <Label x:Name="title" Content="Gestion de production" FontFamily="Verdana" HorizontalAlignment="Left" Margin="53,20,0,0" VerticalAlignment="Top" Width="281" FontWeight="Bold" FontStyle="Italic"/>
-        <Grid HorizontalAlignment="Left" Height="373" Margin="33,74,0,0" VerticalAlignment="Top" Width="236">
+        <Grid HorizontalAlignment="Left" Height="389" Margin="33,74,0,0" VerticalAlignment="Top" Width="236">
             <Border BorderBrush="Black" BorderThickness="1" Margin="0,16,-16,0"/>
-            <Label  x:Name="Lot" Content="Lot" Margin="10,40,197,308"/>
-            <ComboBox x:Name="LotDropDown"  Margin="100,45,-4,308"/>
-            <Label x:Name="Quality" Content="Quality" Margin="10,161,171,183"/>
-            <ComboBox x:Name="QualityDropDown" Margin="100,161,-4,192" Height="20"/>
-            <Label x:Name="Layout" Content="Layout" Margin="10,122,179,227"/>
-            <ComboBox x:Name="LayoutDropDown" Margin="100,126,-4,227" Height="20"/>
-            <Label x:Name="Component" Content="Component" Margin="10,82,153,265"/>
-            <ComboBox x:Name="ComponentDropDown" Margin="100,82,-4,271"/>
-            <Label x:Name="Performance" Content="Performance" Margin="10,195,141,154"/>
-            <ComboBox x:Name="PerformanceDropDown" Margin="100,199,-4,154" Height="20"/>
-            <Button x:Name="Reset" Content="Réinitialiser" Width="80" Height="20" Margin="141,258,15,95" />
-            <Button x:Name="Valider" Content="Valider" Width="80" Height="20" Margin="29,258,127,95" Click="Valider_Click" />
-            <Button x:Name="Graphique" Content="Graphique" Margin="29,305,15,27" Click="Graphique_Click" />
+            <Label  x:Name="Lot" Content="Lot" Margin="10,31,197,333" Width="29" Height="25"/>
+            <ComboBox x:Name="LotDropDown"  Margin="100,36,-4,333" Width="140" Height="20"/>
+            <Label x:Name="Quality" Content="Quality" Margin="10,134,171,226" Width="55" Height="29"/>
+            <ComboBox x:Name="QualityDropDown" Margin="100,139,-4,230" Height="20" Width="140"/>
+            <Label x:Name="Layout" Content="Layout" Margin="10,100,179,265" Width="47" Height="24"/>
+            <ComboBox x:Name="LayoutDropDown" Margin="100,104,-4,265" Height="20" Width="140"/>
+            <Label x:Name="Component" Content="Component" Margin="10,63,153,300" Width="73" Height="26"/>
+            <ComboBox x:Name="ComponentDropDown" Margin="100,69,-4,300" Height="20" Width="140"/>
+            <Label x:Name="Performance" Content="Performance" Margin="10,168,141,197" Width="85" Height="24"/>
+            <ComboBox x:Name="PerformanceDropDown" Margin="100,172,-4,197" Height="20" Width="140"/>
+            <DatePicker x:Name="Date" Margin="0,226,-4,138" Height="25" Width="140" HorizontalAlignment="Right" />
+            <Button x:Name="Reset" Content="Réinitialiser" Width="80" Height="20" Margin="141,286,15,83" />
+            <Button x:Name="Valider" Content="Valider" Width="80" Height="20" Margin="29,286,127,83" Click="Valider_Click" />
+            <Button x:Name="Graphique" Content="Graphique" Margin="29,328,15,20" Click="Graphique_Click" Width="192" Height="41" />
+            <Label x:Name="DateLabel" Content="Date" Margin="10,222,141,143" Height="24" Width="85"/>
         </Grid>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="322,90,0,0" VerticalAlignment="Top" Height="619" Width="810" ItemsSource="{Binding}" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.ColumnHeaderStyle>
