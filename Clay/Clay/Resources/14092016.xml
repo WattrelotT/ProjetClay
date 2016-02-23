@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="14/09/2016" >
+  <data timecode="5000" lot="1125889763">
+    <offset>13</offset>
+    <pressure>658848700</pressure>
+    <layout>1000</layout>
+    <component>Quartz3</component>
+    <colorbound>Red</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5500" lot="1125889764">
+    <offset>12</offset>
+    <pressure>658848720</pressure>
+    <layout>1250</layout>
+    <component>Shungite2</component>
+    <colorbound>Blue</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+  <data timecode="6000" lot="1125889765">
+    <offset>14</offset>
+    <pressure>658848720</pressure>
+    <layout>1500</layout>
+    <component>Zircon5</component>
+    <colorbound>Yellow</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="6500" lot="1125889568">
+    <offset>10</offset>
+    <pressure>658848740</pressure>
+    <layout>1750</layout>
+    <component>Tourmaline3</component>
+    <colorbound>Pink</colorbound>
+    <quality>High</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+  <data timecode="7000" lot="1125889569">
+    <offset>12</offset>
+    <pressure>658848760</pressure>
+    <layout>2000</layout>
+    <component>Améthyste4</component>
+    <colorbound>Violet</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+</datas>

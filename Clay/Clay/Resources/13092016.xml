@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="13/09/2016" >
+  <data timecode="8000" lot="1125889650">
+    <offset>13</offset>
+    <pressure>658849620</pressure>
+    <layout>1500</layout>
+    <component>Iris4</component>
+    <colorbound>Black</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+  <data timecode="8500" lot="1125889651">
+    <offset>12</offset>
+    <pressure>658849640</pressure>
+    <layout>1250</layout>
+    <component>PierreLune5</component>
+    <colorbound>Pink</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="6500" lot="1125889652">
+    <offset>14</offset>
+    <pressure>658849660</pressure>
+    <layout>1000</layout>
+    <component>Serpentine5</component>
+    <colorbound>White</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889653">
+    <offset>15</offset>
+    <pressure>658849680</pressure>
+    <layout>1750</layout>
+    <component>Topaze3</component>
+    <colorbound>Silver</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="6000" lot="1125889654">
+    <offset>13</offset>
+    <pressure>658849070</pressure>
+    <layout>2000</layout>
+    <component>AgateRubanée3</component>
+    <colorbound>Turquoise</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+</datas>

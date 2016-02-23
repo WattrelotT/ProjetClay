@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="07/09/2016" >
+  <data timecode="5500" lot="1125889610">
+    <offset>13</offset>
+    <pressure>658849270</pressure>
+    <layout>1000</layout>
+    <component>Chrysoprase5</component>
+    <colorbound>Violet</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889611">
+    <offset>12</offset>
+    <pressure>658849280</pressure>
+    <layout>1250</layout>
+    <component>ChristalRoche5</component>
+    <colorbound>Orange</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="6000" lot="1125889612">
+    <offset>14</offset>
+    <pressure>658849290</pressure>
+    <layout>1500</layout>
+    <component>Tanzanite1</component>
+    <colorbound>Mauve</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="6500" lot="1125889613">
+    <offset>15</offset>
+    <pressure>658849300</pressure>
+    <layout>1750</layout>
+    <component>FluorineJaune3</component>
+    <colorbound>Golden</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="7000" lot="1125889614">
+    <offset>11</offset>
+    <pressure>658849310</pressure>
+    <layout>2000</layout>
+    <component>Fuschite3</component>
+    <colorbound>Grey</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+</datas>

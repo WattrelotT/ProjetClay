@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="08/09/2016" >
+  <data timecode="6000" lot="1125889620">
+    <offset>13</offset>
+    <pressure>658849320</pressure>
+    <layout>1000</layout>
+    <component>GrenatAlmadin5</component>
+    <colorbound>Red</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+  <data timecode="6500" lot="1125889621">
+    <offset>12</offset>
+    <pressure>658849340</pressure>
+    <layout>1250</layout>
+    <component>Rhodolite2</component>
+    <colorbound>Blue</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="5000" lot="1125889622">
+    <offset>14</offset>
+    <pressure>658849360</pressure>
+    <layout>1500</layout>
+    <component>Heliotrope1</component>
+    <colorbound>Yellow</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5500" lot="1125889623">
+    <offset>15</offset>
+    <pressure>658849380</pressure>
+    <layout>1750</layout>
+    <component>Howlite1</component>
+    <colorbound>Greem</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="7000" lot="1125889624">
+    <offset>11</offset>
+    <pressure>658849400</pressure>
+    <layout>2000</layout>
+    <component>Lolite2</component>
+    <colorbound>Black</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+</datas>

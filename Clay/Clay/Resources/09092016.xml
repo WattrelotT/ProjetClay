@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="09/09/2016" >
+  <data timecode="7000" lot="1125889630">
+    <offset>13</offset>
+    <pressure>658849420</pressure>
+    <layout>1000</layout>
+    <component>Jade2</component>
+    <colorbound>Pink</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+  <data timecode="6500" lot="1125889631">
+    <offset>12</offset>
+    <pressure>658849440</pressure>
+    <layout>1250</layout>
+    <component>JaspeZébré3</component>
+    <colorbound>White</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="6000" lot="1125889632">
+    <offset>14</offset>
+    <pressure>658849460</pressure>
+    <layout>1500</layout>
+    <component>JaspePolychrome4</component>
+    <colorbound>Silver</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5500" lot="1125889633">
+    <offset>15</offset>
+    <pressure>658849480</pressure>
+    <layout>1750</layout>
+    <component>Jaspe5</component>
+    <colorbound>Turquoise</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="5000" lot="1125889634">
+    <offset>11</offset>
+    <pressure>658849500</pressure>
+    <layout>2000</layout>
+    <component>Labradorite4</component>
+    <colorbound>Violet</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+</datas>
