@@ -180,6 +180,12 @@
   <ItemGroup>
     <Resource Include="Resources\06092016.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClayData\ClayData.csproj">
+      <Project>{5a37c3e7-d2e2-4347-a149-a1622c7eacc4}</Project>
+      <Name>ClayData</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
