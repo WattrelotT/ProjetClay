@@ -1,0 +1,1194 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<racine>
+  <DocumentProperties>
+    <Author>Selliez</Author>
+    <LastAuthor>Jeremy</LastAuthor>
+    <Created>2016-02-22T10:18:00Z</Created>
+    <Version>1.06</Version>
+  </DocumentProperties>
+  <datas date="01/09/2016" >
+    <data timecode="5000" lot="1125889563">
+      <offset>11</offset>
+      <pressure>658848951</pressure>
+      <layout>1000</layout>
+      <component>Quartz1</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889564">
+      <offset>12</offset>
+      <pressure>658848961</pressure>
+      <layout>1250</layout>
+      <component>Shungite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125889565">
+      <offset>13</offset>
+      <pressure>658848971</pressure>
+      <layout>1500</layout>
+      <component>Zircon3</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125889566">
+      <offset>14</offset>
+      <pressure>658848981</pressure>
+      <layout>1750</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="7000" lot="1125889567">
+      <offset>15</offset>
+      <pressure>658848991</pressure>
+      <layout>2000</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="02/09/2016" >
+    <data timecode="5000" lot="1125889570">
+      <offset>11</offset>
+      <pressure>658849020</pressure>
+      <layout>1000</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5500" lot="1125889571">
+      <offset>12</offset>
+      <pressure>658849030</pressure>
+      <layout>1250</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6000" lot="1125889572">
+      <offset>13</offset>
+      <pressure>658849040</pressure>
+      <layout>1500</layout>
+      <component>Tourmaline3</component>
+      <colorbound>Pink</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125889573">
+      <offset>14</offset>
+      <pressure>658849050</pressure>
+      <layout>1750</layout>
+      <component>Agate1</component>
+      <colorbound>White</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="7000" lot="1125889574">
+      <offset>15</offset>
+      <pressure>658849060</pressure>
+      <layout>2000</layout>
+      <component>AgateBlanche2</component>
+      <colorbound>Silver</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="05/09/2016" >
+    <data timecode="6500" lot="1125889590">
+      <offset>11</offset>
+      <pressure>658849170</pressure>
+      <layout>1000</layout>
+      <component>AgateEnCamée3</component>
+      <colorbound>Grey</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="7000" lot="1125889591">
+      <offset>12</offset>
+      <pressure>658849180</pressure>
+      <layout>1250</layout>
+      <component>Ambre4</component>
+      <colorbound>Red</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6000" lot="1125889592">
+      <offset>13</offset>
+      <pressure>658849190</pressure>
+      <layout>1500</layout>
+      <component>Iris3</component>
+      <colorbound>Blue</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889593">
+      <offset>14</offset>
+      <pressure>658849200</pressure>
+      <layout>1750</layout>
+      <component>Aventurine1</component>
+      <colorbound>Yellow</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5000" lot="1125889594">
+      <offset>15</offset>
+      <pressure>658849210</pressure>
+      <layout>2000</layout>
+      <component>Béryl2</component>
+      <colorbound>Greem</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+  </datas>
+  <datas date="07/09/2016" >
+    <data timecode="5500" lot="1125889610">
+      <offset>13</offset>
+      <pressure>658849270</pressure>
+      <layout>1000</layout>
+      <component>Chrysoprase5</component>
+      <colorbound>Violet</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5000" lot="1125889611">
+      <offset>12</offset>
+      <pressure>658849280</pressure>
+      <layout>1250</layout>
+      <component>ChristalRoche5</component>
+      <colorbound>Orange</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6000" lot="1125889612">
+      <offset>14</offset>
+      <pressure>658849290</pressure>
+      <layout>1500</layout>
+      <component>Tanzanite1</component>
+      <colorbound>Mauve</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125889613">
+      <offset>15</offset>
+      <pressure>658849300</pressure>
+      <layout>1750</layout>
+      <component>FluorineJaune3</component>
+      <colorbound>Golden</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="7000" lot="1125889614">
+      <offset>11</offset>
+      <pressure>658849310</pressure>
+      <layout>2000</layout>
+      <component>Fuschite3</component>
+      <colorbound>Grey</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="08/09/2016" >
+    <data timecode="6000" lot="1125889620">
+      <offset>13</offset>
+      <pressure>658849320</pressure>
+      <layout>1000</layout>
+      <component>GrenatAlmadin5</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125889621">
+      <offset>12</offset>
+      <pressure>658849340</pressure>
+      <layout>1250</layout>
+      <component>Rhodolite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5000" lot="1125889622">
+      <offset>14</offset>
+      <pressure>658849360</pressure>
+      <layout>1500</layout>
+      <component>Heliotrope1</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889623">
+      <offset>15</offset>
+      <pressure>658849380</pressure>
+      <layout>1750</layout>
+      <component>Howlite1</component>
+      <colorbound>Greem</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="7000" lot="1125889624">
+      <offset>11</offset>
+      <pressure>658849400</pressure>
+      <layout>2000</layout>
+      <component>Lolite2</component>
+      <colorbound>Black</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="09/09/2016" >
+    <data timecode="7000" lot="1125889630">
+      <offset>13</offset>
+      <pressure>658849420</pressure>
+      <layout>1000</layout>
+      <component>Jade2</component>
+      <colorbound>Pink</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125889631">
+      <offset>12</offset>
+      <pressure>658849440</pressure>
+      <layout>1250</layout>
+      <component>JaspeZébré3</component>
+      <colorbound>White</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6000" lot="1125889632">
+      <offset>14</offset>
+      <pressure>658849460</pressure>
+      <layout>1500</layout>
+      <component>JaspePolychrome4</component>
+      <colorbound>Silver</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889633">
+      <offset>15</offset>
+      <pressure>658849480</pressure>
+      <layout>1750</layout>
+      <component>Jaspe5</component>
+      <colorbound>Turquoise</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5000" lot="1125889634">
+      <offset>11</offset>
+      <pressure>658849500</pressure>
+      <layout>2000</layout>
+      <component>Labradorite4</component>
+      <colorbound>Violet</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="12/09/2016" >
+    <data timecode="8000" lot="1125889640">
+      <offset>13</offset>
+      <pressure>658849520</pressure>
+      <layout>1000</layout>
+      <component>Lepidolite3</component>
+      <colorbound>Orange</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="8500" lot="1125889641">
+      <offset>12</offset>
+      <pressure>658849540</pressure>
+      <layout>1250</layout>
+      <component>Malachite1</component>
+      <colorbound>Red</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6500" lot="1125889642">
+      <offset>14</offset>
+      <pressure>658849560</pressure>
+      <layout>1500</layout>
+      <component>ObsidienneDorée2</component>
+      <colorbound>Blue</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889643">
+      <offset>15</offset>
+      <pressure>658849580</pressure>
+      <layout>1750</layout>
+      <component>Onyx2</component>
+      <colorbound>Yellow</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5000" lot="1125889644">
+      <offset>11</offset>
+      <pressure>658849600</pressure>
+      <layout>2000</layout>
+      <component>Opale3</component>
+      <colorbound>Greem</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="13/09/2016" >
+    <data timecode="8000" lot="1125889650">
+      <offset>13</offset>
+      <pressure>658849620</pressure>
+      <layout>1500</layout>
+      <component>Iris4</component>
+      <colorbound>Black</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="8500" lot="1125889651">
+      <offset>12</offset>
+      <pressure>658849640</pressure>
+      <layout>1250</layout>
+      <component>PierreLune5</component>
+      <colorbound>Pink</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6500" lot="1125889652">
+      <offset>14</offset>
+      <pressure>658849660</pressure>
+      <layout>1000</layout>
+      <component>Serpentine5</component>
+      <colorbound>White</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5000" lot="1125889653">
+      <offset>15</offset>
+      <pressure>658849680</pressure>
+      <layout>1750</layout>
+      <component>Topaze3</component>
+      <colorbound>Silver</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6000" lot="1125889654">
+      <offset>13</offset>
+      <pressure>658849070</pressure>
+      <layout>2000</layout>
+      <component>AgateRubanée3</component>
+      <colorbound>Turquoise</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="14/09/2016" >
+    <data timecode="5000" lot="1125889763">
+      <offset>13</offset>
+      <pressure>658848700</pressure>
+      <layout>1000</layout>
+      <component>Quartz3</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889764">
+      <offset>12</offset>
+      <pressure>658848720</pressure>
+      <layout>1250</layout>
+      <component>Shungite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125889765">
+      <offset>14</offset>
+      <pressure>658848720</pressure>
+      <layout>1500</layout>
+      <component>Zircon5</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125889568">
+      <offset>10</offset>
+      <pressure>658848740</pressure>
+      <layout>1750</layout>
+      <component>Tourmaline3</component>
+      <colorbound>Pink</colorbound>
+      <quality>High</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="7000" lot="1125889569">
+      <offset>12</offset>
+      <pressure>658848760</pressure>
+      <layout>2000</layout>
+      <component>Améthyste4</component>
+      <colorbound>Violet</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="15/09/2016" >
+    <data timecode="7000" lot="1125889866">
+      <offset>15</offset>
+      <pressure>658849881</pressure>
+      <layout>1750</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+
+
+    <data timecode="6500" lot="1125889867">
+      <offset>11</offset>
+      <pressure>658849891</pressure>
+      <layout>2000</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+
+    <data timecode="6000" lot="1125889968">
+      <offset>10</offset>
+      <pressure>658850001</pressure>
+      <layout>1500</layout>
+      <component>Tourmaline3</component>
+      <colorbound>Pink</colorbound>
+      <quality>High</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889582">
+      <offset>14</offset>
+      <pressure>658849090</pressure>
+      <layout>1250</layout>
+      <component>Amétrine5</component>
+      <colorbound>Orange</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5000" lot="1125889583">
+      <offset>15</offset>
+      <pressure>658849100</pressure>
+      <layout>1000</layout>
+      <component>AventurineBleue1</component>
+      <colorbound>Mauve</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="16/09/2016" >
+    <data timecode="5500" lot="1125890170">
+      <offset>13</offset>
+      <pressure>658850020</pressure>
+      <layout>1000</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5000" lot="1125890171">
+      <offset>12</offset>
+      <pressure>658850030</pressure>
+      <layout>1250</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6500" lot="1125890172">
+      <offset>14</offset>
+      <pressure>658850040</pressure>
+      <layout>1500</layout>
+      <component>Tourmaline3</component>
+      <colorbound>Pink</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125889584">
+      <offset>11</offset>
+      <pressure>658849110</pressure>
+      <layout>1750</layout>
+      <component>AventurineVerte2</component>
+      <colorbound>Golden</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="7000" lot="1125889600">
+      <offset>13</offset>
+      <pressure>658849220</pressure>
+      <layout>2000</layout>
+      <component>Bronzite2</component>
+      <colorbound>Black</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="19/09/2016" >
+    <data timecode="5000" lot="1125890173">
+      <offset>15</offset>
+      <pressure>658850050</pressure>
+      <layout>1000</layout>
+      <component>Agate1</component>
+      <colorbound>White</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+
+    <data timecode="5500" lot="1125890174">
+      <offset>11</offset>
+      <pressure>658850060</pressure>
+      <layout>1250</layout>
+      <component>AgateBlanche2</component>
+      <colorbound>Silver</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>1</result>
+    </data>
+
+
+    <data timecode="6000" lot="1125889600">
+      <offset>13</offset>
+      <pressure>658849220</pressure>
+      <layout>1500</layout>
+      <component>Bronzite2</component>
+      <colorbound>Black</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125890180">
+      <offset>13</offset>
+      <pressure>658850070</pressure>
+      <layout>1750</layout>
+      <component>AgateRubanée3</component>
+      <colorbound>Turquoise</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+
+    <data timecode="7000" lot="1125890181">
+      <offset>12</offset>
+      <pressure>658850080</pressure>
+      <layout>2000</layout>
+      <component>Améthyste4</component>
+      <colorbound>Violet</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="20/09/2016" >
+    <data timecode="6500" lot="1125890182">
+      <offset>14</offset>
+      <pressure>658850090</pressure>
+      <layout>2000</layout>
+      <component>Amétrine5</component>
+      <colorbound>Orange</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+
+    <data timecode="6000" lot="1125890183">
+      <offset>15</offset>
+      <pressure>658850100</pressure>
+      <layout>1000</layout>
+      <component>AventurineBleue1</component>
+      <colorbound>Mauve</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5000" lot="1125890184">
+      <offset>11</offset>
+      <pressure>658850110</pressure>
+      <layout>1250</layout>
+      <component>AventurineVerte2</component>
+      <colorbound>Golden</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+
+    <data timecode="5500" lot="1125890190">
+      <offset>13</offset>
+      <pressure>658850170</pressure>
+      <layout>1500</layout>
+      <component>AgateEnCamée3</component>
+      <colorbound>Grey</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="7000" lot="1125890191">
+      <offset>12</offset>
+      <pressure>658850180</pressure>
+      <layout>1750</layout>
+      <component>Ambre4</component>
+      <colorbound>Red</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="21/09/2016" >
+    <data timecode="6000" lot="1125890192">
+      <offset>14</offset>
+      <pressure>658850190</pressure>
+      <layout>1000</layout>
+      <component>Iris3</component>
+      <colorbound>Blue</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5000" lot="1125890193">
+      <offset>15</offset>
+      <pressure>658850200</pressure>
+      <layout>1250</layout>
+      <component>Aventurine1</component>
+      <colorbound>Yellow</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="7000" lot="1125890194">
+      <offset>11</offset>
+      <pressure>658850210</pressure>
+      <layout>1500</layout>
+      <component>Béryl2</component>
+      <colorbound>Greem</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125890100">
+      <offset>13</offset>
+      <pressure>658850220</pressure>
+      <layout>1750</layout>
+      <component>Bronzite2</component>
+      <colorbound>Black</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125890101">
+      <offset>12</offset>
+      <pressure>658850230</pressure>
+      <layout>2000</layout>
+      <component>Calcédoine2</component>
+      <colorbound>Pink</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="22/09/2016" >
+    <data timecode="5000" lot="1125890102">
+      <offset>14</offset>
+      <pressure>658849240</pressure>
+      <layout>1000</layout>
+      <component>CitrineChauffée3</component>
+      <colorbound>White</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125899113">
+      <offset>15</offset>
+      <pressure>658850150</pressure>
+      <layout>1250</layout>
+      <component>CornalineBandée4</component>
+      <colorbound>Silver</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5500" lot="1125891114">
+      <offset>11</offset>
+      <pressure>658849260</pressure>
+      <layout>1500</layout>
+      <component>CristalDeRoche4</component>
+      <colorbound>Turquoise</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125895763">
+      <offset>13</offset>
+      <pressure>658848700</pressure>
+      <layout>1750</layout>
+      <component>Quartz3</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="7000" lot="1125895764">
+      <offset>12</offset>
+      <pressure>658848720</pressure>
+      <layout>2000</layout>
+      <component>Shungite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="23/09/2016" >
+    <data timecode="5000" lot="1125889765">
+      <offset>14</offset>
+      <pressure>658848771</pressure>
+      <layout>1000</layout>
+      <component>Zircon5</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889866">
+      <offset>15</offset>
+      <pressure>658849881</pressure>
+      <layout>1250</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6000" lot="1125889867">
+      <offset>11</offset>
+      <pressure>658849891</pressure>
+      <layout>1500</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6500" lot="1125889968">
+      <offset>10</offset>
+      <pressure>658850001</pressure>
+      <layout>1750</layout>
+      <component>Tourmaline3</component>
+      <colorbound>Pink</colorbound>
+      <quality>High</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="7000" lot="1125890170">
+      <offset>13</offset>
+      <pressure>658850020</pressure>
+      <layout>2000</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+  </datas>
+  <datas date="26/09/2016" >
+    <data timecode="7000" lot="1125890171">
+      <offset>12</offset>
+      <pressure>658850030</pressure>
+      <layout>2000</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6500" lot="1125890172">
+      <offset>14</offset>
+      <pressure>658850040</pressure>
+      <layout>1750</layout>
+      <component>Tourmaline3</component>
+      <colorbound>Pink</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125890173">
+      <offset>15</offset>
+      <pressure>658850050</pressure>
+      <layout>1500</layout>
+      <component>Agate1</component>
+      <colorbound>White</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125890174">
+      <offset>11</offset>
+      <pressure>658850060</pressure>
+      <layout>1250</layout>
+      <component>AgateBlanche2</component>
+      <colorbound>Silver</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5000" lot="1125890180">
+      <offset>13</offset>
+      <pressure>658850070</pressure>
+      <layout>1000</layout>
+      <component>AgateRubanée3</component>
+      <colorbound>Turquoise</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="27/09/2016" >
+    <data timecode="6000" lot="1125890181">
+      <offset>12</offset>
+      <pressure>658850080</pressure>
+      <layout>2000</layout>
+      <component>Améthyste4</component>
+      <colorbound>Violet</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6500" lot="1125890182">
+      <offset>14</offset>
+      <pressure>658850090</pressure>
+      <layout>1250</layout>
+      <component>Amétrine5</component>
+      <colorbound>Orange</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125890183">
+      <offset>15</offset>
+      <pressure>658850100</pressure>
+      <layout>1000</layout>
+      <component>AventurineBleue1</component>
+      <colorbound>Mauve</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="7000" lot="1125890184">
+      <offset>11</offset>
+      <pressure>658850110</pressure>
+      <layout>1500</layout>
+      <component>AventurineVerte2</component>
+      <colorbound>Golden</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5000" lot="1125890190">
+      <offset>13</offset>
+      <pressure>658850170</pressure>
+      <layout>1750</layout>
+      <component>AgateEnCamée3</component>
+      <colorbound>Grey</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="28/09/2016" >
+    <data timecode="5000" lot="1125890191">
+      <offset>12</offset>
+      <pressure>658850180</pressure>
+      <layout>2000</layout>
+      <component>Ambre4</component>
+      <colorbound>Red</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6000" lot="1125890192">
+      <offset>14</offset>
+      <pressure>658850190</pressure>
+      <layout>1000</layout>
+      <component>Iris3</component>
+      <colorbound>Blue</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125890193">
+      <offset>15</offset>
+      <pressure>658850200</pressure>
+      <layout>1250</layout>
+      <component>Aventurine1</component>
+      <colorbound>Yellow</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="7000" lot="1125890194">
+      <offset>11</offset>
+      <pressure>658850210</pressure>
+      <layout>1500</layout>
+      <component>Béryl2</component>
+      <colorbound>Greem</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125890100">
+      <offset>13</offset>
+      <pressure>658850220</pressure>
+      <layout>1750</layout>
+      <component>Bronzite2</component>
+      <colorbound>Black</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+  </datas>
+  <datas date="29/09/2016" >
+    <data timecode="7000" lot="1125890101">
+      <offset>12</offset>
+      <pressure>658850230</pressure>
+      <layout>2000</layout>
+      <component>Calcédoine2</component>
+      <colorbound>Pink</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="6500" lot="1125890102">
+      <offset>14</offset>
+      <pressure>658849240</pressure>
+      <layout>1750</layout>
+      <component>CitrineChauffée3</component>
+      <colorbound>White</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125899113">
+      <offset>15</offset>
+      <pressure>658850150</pressure>
+      <layout>1500</layout>
+      <component>CornalineBandée4</component>
+      <colorbound>Silver</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="5500" lot="1125891114">
+      <offset>11</offset>
+      <pressure>658849260</pressure>
+      <layout>1250</layout>
+      <component>CristalDeRoche4</component>
+      <colorbound>Turquoise</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5000" lot="1125889601">
+      <offset>12</offset>
+      <pressure>658849230</pressure>
+      <layout>1000</layout>
+      <component>Calcédoine2</component>
+      <colorbound>Pink</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+
+  </datas>
+  <datas date="30/09/2016" >
+    <data timecode="5500" lot="1125895763">
+      <offset>13</offset>
+      <pressure>658848700</pressure>
+      <layout>1250</layout>
+      <component>Quartz3</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5000" lot="1125895764">
+      <offset>12</offset>
+      <pressure>658848720</pressure>
+      <layout>1000</layout>
+      <component>Shungite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6500" lot="1125889765">
+      <offset>14</offset>
+      <pressure>658848771</pressure>
+      <layout>1500</layout>
+      <component>Zircon5</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125889866">
+      <offset>15</offset>
+      <pressure>658849881</pressure>
+      <layout>1750</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+
+    <data timecode="7000" lot="1125889867">
+      <offset>11</offset>
+      <pressure>658849891</pressure>
+      <layout>2000</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+  </datas>
+</racine>
