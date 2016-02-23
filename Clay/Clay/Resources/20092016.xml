@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="20/09/2016" >
+  <data timecode="6500" lot="1125890182">
+    <offset>14</offset>
+    <pressure>658850090</pressure>
+    <layout>2000</layout>
+    <component>Amétrine5</component>
+    <colorbound>Orange</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="6000" lot="1125890183">
+    <offset>15</offset>
+    <pressure>658850100</pressure>
+    <layout>1000</layout>
+    <component>AventurineBleue1</component>
+    <colorbound>Mauve</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="5000" lot="1125890184">
+    <offset>11</offset>
+    <pressure>658850110</pressure>
+    <layout>1250</layout>
+    <component>AventurineVerte2</component>
+    <colorbound>Golden</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5500" lot="1125890190">
+    <offset>13</offset>
+    <pressure>658850170</pressure>
+    <layout>1500</layout>
+    <component>AgateEnCamée3</component>
+    <colorbound>Grey</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+  <data timecode="7000" lot="1125890191">
+    <offset>12</offset>
+    <pressure>658850180</pressure>
+    <layout>1750</layout>
+    <component>Ambre4</component>
+    <colorbound>Red</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+</datas>

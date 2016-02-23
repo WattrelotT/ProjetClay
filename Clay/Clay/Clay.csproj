@@ -111,9 +111,74 @@
   <ItemGroup>
     <Resource Include="Images\logo.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\01092016.xml" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\lot.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\02092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\05092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\07092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\08092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\30092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\09092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\12092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\13092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\14092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\15092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\16092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\19092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\20092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\21092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\22092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\23092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\26092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\27092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\28092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\29092016.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\06092016.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

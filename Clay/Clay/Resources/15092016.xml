@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="15/09/2016" >
+  <data timecode="7000" lot="1125889866">
+    <offset>15</offset>
+    <pressure>658849881</pressure>
+    <layout>1750</layout>
+    <component>Turquoise4</component>
+    <colorbound>Greem</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>1</result>
+  </data>
+  <data timecode="6500" lot="1125889867">
+    <offset>11</offset>
+    <pressure>658849891</pressure>
+    <layout>2000</layout>
+    <component>Death5</component>
+    <colorbound>Black</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="6000" lot="1125889968">
+    <offset>10</offset>
+    <pressure>658850001</pressure>
+    <layout>1500</layout>
+    <component>Tourmaline3</component>
+    <colorbound>Pink</colorbound>
+    <quality>High</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5500" lot="1125889582">
+    <offset>14</offset>
+    <pressure>658849090</pressure>
+    <layout>1250</layout>
+    <component>Amétrine5</component>
+    <colorbound>Orange</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889583">
+    <offset>15</offset>
+    <pressure>658849100</pressure>
+    <layout>1000</layout>
+    <component>AventurineBleue1</component>
+    <colorbound>Mauve</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+</datas>

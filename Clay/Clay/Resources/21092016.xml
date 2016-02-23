@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="21/09/2016" >
+  <data timecode="6000" lot="1125890192">
+    <offset>14</offset>
+    <pressure>658850190</pressure>
+    <layout>1000</layout>
+    <component>Iris3</component>
+    <colorbound>Blue</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125890193">
+    <offset>15</offset>
+    <pressure>658850200</pressure>
+    <layout>1250</layout>
+    <component>Aventurine1</component>
+    <colorbound>Yellow</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+  <data timecode="7000" lot="1125890194">
+    <offset>11</offset>
+    <pressure>658850210</pressure>
+    <layout>1500</layout>
+    <component>Béryl2</component>
+    <colorbound>Greem</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5500" lot="1125890100">
+    <offset>13</offset>
+    <pressure>658850220</pressure>
+    <layout>1750</layout>
+    <component>Bronzite2</component>
+    <colorbound>Black</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+  <data timecode="6500" lot="1125890101">
+    <offset>12</offset>
+    <pressure>658850230</pressure>
+    <layout>2000</layout>
+    <component>Calcédoine2</component>
+    <colorbound>Pink</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>1</result>
+  </data>
+</datas>

@@ -1,0 +1,53 @@
+﻿<?xml version = "1.0" encoding="utf-8" standalone="yes" ?>
+<datas date="01/09/2016" >
+    <data timecode="5000" lot="1125889563">
+      <offset>11</offset>
+      <pressure>658848951</pressure>
+      <layout>1000</layout>
+      <component>Quartz1</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+    <data timecode="5500" lot="1125889564">
+      <offset>12</offset>
+      <pressure>658848961</pressure>
+      <layout>1250</layout>
+      <component>Shungite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+    <data timecode="6000" lot="1125889565">
+      <offset>13</offset>
+      <pressure>658848971</pressure>
+      <layout>1500</layout>
+      <component>Zircon3</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+    <data timecode="6500" lot="1125889566">
+      <offset>14</offset>
+      <pressure>658848981</pressure>
+      <layout>1750</layout>
+      <component>Turquoise4</component>
+      <colorbound>Greem</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>1</result>
+    </data>
+    <data timecode="7000" lot="1125889567">
+      <offset>15</offset>
+      <pressure>658848991</pressure>
+      <layout>2000</layout>
+      <component>Death5</component>
+      <colorbound>Black</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>1</result>
+    </data>
+</datas>
