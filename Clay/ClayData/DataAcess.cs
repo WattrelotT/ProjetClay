@@ -8,13 +8,13 @@ namespace ClayData
 {
     public class DataAcess
     {
-        private List<Data> GetAllData()
+        public List<Data> GetAllData()
         {
             ClayEntities MaClayEntities = new ClayEntities();
             return MaClayEntities.Data.ToList();
         }
 
-        private List<Data> GetDataByDate(DateTime DateTest)
+        public List<Data> GetDataByDate(DateTime DateTest)
         {
             ClayEntities MaClayEntities = new ClayEntities();
             List<Data> ListData = new List<Data>();
@@ -27,6 +27,30 @@ namespace ClayData
             }
 
             return ListData;
+        }
+
+        public void SetData(List<Data> ListDataInsert)
+        {
+            ClayEntities MaClayEntities = new ClayEntities();
+            List<Data> ListDataCompare = GetAllData();
+            if(ListDataCompare.Count == 0)
+            {
+                foreach (var c in ListDataInsert)
+                {
+                    MaClayEntities.Data.Add(c);
+                }
+            }
+            foreach(var a in ListDataCompare)
+            {
+                foreach(var b in ListDataInsert)
+                {
+                    if((b.date != a.date) && (b.lot != b.lot))
+                    {
+                        MaClayEntities.Data.Add(b);
+                    }
+                }
+            }
+            MaClayEntities.SaveChanges();
         }
     }
 }

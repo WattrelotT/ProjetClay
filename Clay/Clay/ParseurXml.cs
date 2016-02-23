@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using ClayData;
 
 namespace Clay
 {
     class ParseurXml
     {
-        List<Data.Datas> MaListData;
-        Data.Datas MesData;
-        public List<Data.Datas> LectureXML(string fichierXML)
+        List<Data> MaListData;
+        Data MesData;
+        public List<Data> LectureXML(string fichierXML)
         {
             XDocument doc = XDocument.Load(fichierXML);
-            MaListData = new List<Data.Datas>();
+            MaListData = new List<Data>();
             foreach (XElement data in doc.Root.Elements("data"))
             {
-                MesData = new Data.Datas();
+                MesData = new Data();
 
                 MesData.offset = data.Element("offset").Value == "" ? 0 : int.Parse(data.Element("offset").Value);
                 MesData.pressure = data.Element("pressure").Value == "" ? 0 : int.Parse(data.Element("pressure").Value);

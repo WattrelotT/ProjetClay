@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clay
 {
-    public class Data
+    public class Dataold
     {
         public partial class Datas
         {

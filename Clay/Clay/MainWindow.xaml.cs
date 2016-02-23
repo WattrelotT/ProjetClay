@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Clay.Properties;
 using System.Windows.Controls.Primitives;
+using ClayData;
 
 namespace Clay
 {
@@ -25,6 +26,18 @@ namespace Clay
         public MainWindow()
         {
             InitializeComponent();
+
+            
+            List<Data> MalistDeData = new List<Data>();
+            ParseurXml MonParseurXml = new ParseurXml();
+            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml");
+            
+
+            DataAcess MonDataAcess = new DataAcess();
+            MonDataAcess.SetData(MalistDeData);
+
+            dataGrid.DataContext = MonDataAcess.GetAllData();
+            Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
         }
 
         private void Graphique_Click(object sender, RoutedEventArgs e)
@@ -42,12 +55,7 @@ namespace Clay
         }
         private void Valider_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
-            List<Data.Datas> MalistDeData = new List<Data.Datas>();
-            ParseurXml MonParseurXml = new ParseurXml();
-            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml");
-            dataGrid.DataContext = MalistDeData;
-            Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
+            
             
            // dataGrid.DataContext = MalistDeData;
         }
@@ -55,7 +63,7 @@ namespace Clay
         private void ProcessRows()
         {
 
-            foreach (Data.Datas item in dataGrid.ItemsSource)
+            foreach (Data item in dataGrid.ItemsSource)
             {
                 var row = dataGrid.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
                 if (item.quality == "Low")
