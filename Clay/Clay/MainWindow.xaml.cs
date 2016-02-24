@@ -23,12 +23,13 @@ namespace Clay
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Data> MalistDeData;
         public MainWindow()
         {
             InitializeComponent();
 
             
-            List<Data> MalistDeData = new List<Data>();
+             MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
             MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml");
             
@@ -42,7 +43,8 @@ namespace Clay
 
         private void Graphique_Click(object sender, RoutedEventArgs e)
         {
-            
+            Graphique MaFenetreGraphique = new Graphique(MalistDeData);
+            MaFenetreGraphique.Show();
         }
 
         private void columnHeader_Click(object sender, RoutedEventArgs e)
