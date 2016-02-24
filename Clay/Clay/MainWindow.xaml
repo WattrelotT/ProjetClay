@@ -32,7 +32,7 @@
             <Button x:Name="Graphique" Content="Graphique" Margin="29,328,15,20" Click="Graphique_Click" Width="192" Height="41" />
             <Label x:Name="DateLabel" Content="Date" Margin="10,222,141,143" Height="24" Width="85"/>
         </Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="322,90,0,0" VirtualizingPanel.VirtualizationMode="Standard" VerticalAlignment="Top" Height="619" Width="810" ItemsSource="{Binding}" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="322,90,0,0" VirtualizingStackPanel.IsVirtualizing="False" VirtualizingPanel.VirtualizationMode="Standard" VerticalAlignment="Top" Height="619" Width="810" ItemsSource="{Binding}" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader">
                     <EventSetter Event="Click" Handler="columnHeader_Click" />

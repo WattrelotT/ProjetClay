@@ -56,13 +56,19 @@ namespace Clay
                 {
                     quality.Add(item.quality);
                 }
-                layout.Add(item.layout.ToString());
+
+                if (!isInList(layout, item.layout.ToString()))
+                {
+                    layout.Add(item.layout.ToString());
+                }
                 if (!isInList(performance, item.performance))
                 {
                     performance.Add(item.performance);
                 }
-
-                component.Add(item.component);
+                if (!isInList(component, item.component))
+                {
+                    component.Add(item.component);
+                }
             }
 
             LotDropDown.ItemsSource = lot;
@@ -94,7 +100,7 @@ namespace Clay
 
             DataAcess MonDataAcess = new DataAcess();
             dataGrid.DataContext = MonDataAcess.GetAllData();
-
+            dataGrid.ItemsSource = MonDataAcess.GetAllData();
             List<Data> MalistDeData = new List<Data>();
             MalistDeData = MonDataAcess.GetAllData();
 
@@ -113,7 +119,7 @@ namespace Clay
 
                 component.Add(item.component);
             }
-
+            
             LotDropDown.ItemsSource = lot;
             LotDropDown.Items.Refresh();
             QualityDropDown.ItemsSource = quality;
@@ -321,9 +327,9 @@ namespace Clay
 
         private void ProcessRows()
         {
-
             foreach (Data item in dataGrid.ItemsSource)
             {
+                //dataGrid.UpdateLayout();
                 var row = dataGrid.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
                 DataGridCell cell = GetCell(row.GetIndex(), 3, dataGrid);
                 string color = item.colorbound;
