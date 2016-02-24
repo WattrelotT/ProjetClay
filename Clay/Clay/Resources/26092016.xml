@@ -15,7 +15,7 @@
     <pressure>658850040</pressure>
     <layout>1750</layout>
     <component>Tourmaline3</component>
-    <colorbound>Pink</colorbound>
+    <colorbound>Aqua</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -25,7 +25,7 @@
     <pressure>658850050</pressure>
     <layout>1500</layout>
     <component>Agate1</component>
-    <colorbound>White</colorbound>
+    <colorbound>Blue</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>0</result>
@@ -35,7 +35,7 @@
     <pressure>658850060</pressure>
     <layout>1250</layout>
     <component>AgateBlanche2</component>
-    <colorbound>Silver</colorbound>
+    <colorbound>Green</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>1</result>
@@ -45,7 +45,7 @@
     <pressure>658850070</pressure>
     <layout>1000</layout>
     <component>AgateRubanée3</component>
-    <colorbound>Turquoise</colorbound>
+    <colorbound>Glod</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
     <result>0</result>

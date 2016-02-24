@@ -5,7 +5,7 @@
     <pressure>658850050</pressure>
     <layout>1000</layout>
     <component>Agate1</component>
-    <colorbound>White</colorbound>
+    <colorbound>Azure</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>0</result>
@@ -15,7 +15,7 @@
     <pressure>658850060</pressure>
     <layout>1250</layout>
     <component>AgateBlanche2</component>
-    <colorbound>Silver</colorbound>
+    <colorbound>Blue</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>1</result>
@@ -37,7 +37,7 @@
     <component>AgateRubanée3</component>
     <colorbound>Turquoise</colorbound>
     <quality>Low</quality>
-    <performance>Medium</performance>
+    <performance>Orange</performance>
     <result>0</result>
   </data>
   <data timecode="7000" lot="1125890181">
@@ -45,7 +45,7 @@
     <pressure>658850080</pressure>
     <layout>2000</layout>
     <component>Améthyste4</component>
-    <colorbound>Violet</colorbound>
+    <colorbound>AliceBlue</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>

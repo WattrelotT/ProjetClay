@@ -5,7 +5,7 @@
     <pressure>658850230</pressure>
     <layout>2000</layout>
     <component>Calcédoine2</component>
-    <colorbound>Pink</colorbound>
+    <colorbound>AliceBlue</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -15,7 +15,7 @@
     <pressure>658849240</pressure>
     <layout>1750</layout>
     <component>CitrineChauffée3</component>
-    <colorbound>White</colorbound>
+    <colorbound>Azure</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -25,7 +25,7 @@
     <pressure>658850150</pressure>
     <layout>1500</layout>
     <component>CornalineBandée4</component>
-    <colorbound>Silver</colorbound>
+    <colorbound>Cyan</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -35,7 +35,7 @@
     <pressure>658849260</pressure>
     <layout>1250</layout>
     <component>CristalDeRoche4</component>
-    <colorbound>Turquoise</colorbound>
+    <colorbound>Orange</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -45,7 +45,7 @@
     <pressure>658849230</pressure>
     <layout>1000</layout>
     <component>Calcédoine2</component>
-    <colorbound>Pink</colorbound>
+    <colorbound>Glod</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>

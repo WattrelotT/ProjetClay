@@ -5,7 +5,7 @@
     <pressure>658848700</pressure>
     <layout>1000</layout>
     <component>Quartz3</component>
-    <colorbound>Red</colorbound>
+    <colorbound>Aqua</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
     <result>0</result>
@@ -25,7 +25,7 @@
     <pressure>658848720</pressure>
     <layout>1500</layout>
     <component>Zircon5</component>
-    <colorbound>Yellow</colorbound>
+    <colorbound>Cyan</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -35,7 +35,7 @@
     <pressure>658848740</pressure>
     <layout>1750</layout>
     <component>Tourmaline3</component>
-    <colorbound>Pink</colorbound>
+    <colorbound>Green</colorbound>
     <quality>High</quality>
     <performance>High</performance>
     <result>0</result>
@@ -45,7 +45,7 @@
     <pressure>658848760</pressure>
     <layout>2000</layout>
     <component>Améthyste4</component>
-    <colorbound>Violet</colorbound>
+    <colorbound>Orange</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>

@@ -36,9 +36,10 @@ namespace Clay
         {
             InitializeComponent();
 
+            
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
-
+            
             lot = new List<string>();
             quality = new List<string>();
             performance = new List<string>();
@@ -139,7 +140,7 @@ namespace Clay
             foreach ( string s in list)
             {
                 if (s.ToLower() == value.ToLower())
-                {
+        {
                     return true;
                 }
             }
@@ -245,13 +246,13 @@ namespace Clay
             var value = comboBox.SelectedItem;
 
             List<Data> MalistDeData = new List<Data>();
-
+            
             List<string> lLot = new List<string>();
             List<string> lLayout = new List<string>();
             List<string> lComponent = new List<string>();
             List<string> lQuality = new List<string>();
             List<string> lPerformance = new List<string>();
-
+            
             DataAcess MonDataAcess = new DataAcess();
             MalistDeData = MonDataAcess.GetAllData();
 

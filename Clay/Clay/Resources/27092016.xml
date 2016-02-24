@@ -5,7 +5,7 @@
     <pressure>658850080</pressure>
     <layout>2000</layout>
     <component>Améthyste4</component>
-    <colorbound>Violet</colorbound>
+    <colorbound>AliceBlue</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -25,7 +25,7 @@
     <pressure>658850100</pressure>
     <layout>1000</layout>
     <component>AventurineBleue1</component>
-    <colorbound>Mauve</colorbound>
+    <colorbound>Cyan</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -35,7 +35,7 @@
     <pressure>658850110</pressure>
     <layout>1500</layout>
     <component>AventurineVerte2</component>
-    <colorbound>Golden</colorbound>
+    <colorbound>Gold</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -45,7 +45,7 @@
     <pressure>658850170</pressure>
     <layout>1750</layout>
     <component>AgateEnCamée3</component>
-    <colorbound>Grey</colorbound>
+    <colorbound>Aqua</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
     <result>0</result>

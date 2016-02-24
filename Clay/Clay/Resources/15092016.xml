@@ -25,7 +25,7 @@
     <pressure>658850001</pressure>
     <layout>1500</layout>
     <component>Tourmaline3</component>
-    <colorbound>Pink</colorbound>
+    <colorbound>Orange</colorbound>
     <quality>High</quality>
     <performance>High</performance>
     <result>0</result>
@@ -35,7 +35,7 @@
     <pressure>658849090</pressure>
     <layout>1250</layout>
     <component>Amétrine5</component>
-    <colorbound>Orange</colorbound>
+    <colorbound>Cyan</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -45,7 +45,7 @@
     <pressure>658849100</pressure>
     <layout>1000</layout>
     <component>AventurineBleue1</component>
-    <colorbound>Mauve</colorbound>
+    <colorbound>Aqua</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
