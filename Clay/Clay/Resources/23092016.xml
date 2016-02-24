@@ -5,7 +5,7 @@
     <pressure>658848771</pressure>
     <layout>1000</layout>
     <component>Zircon5</component>
-    <colorbound>Yellow</colorbound>
+    <colorbound>Glod</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -35,7 +35,7 @@
     <pressure>658850001</pressure>
     <layout>1750</layout>
     <component>Tourmaline3</component>
-    <colorbound>Pink</colorbound>
+    <colorbound>Cyan</colorbound>
     <quality>High</quality>
     <performance>High</performance>
     <result>0</result>
@@ -45,7 +45,7 @@
     <pressure>658850020</pressure>
     <layout>2000</layout>
     <component>Turquoise4</component>
-    <colorbound>Greem</colorbound>
+    <colorbound>Green</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
     <result>1</result>

@@ -15,7 +15,7 @@
     <pressure>658849640</pressure>
     <layout>1250</layout>
     <component>PierreLune5</component>
-    <colorbound>Pink</colorbound>
+    <colorbound>Green</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -25,7 +25,7 @@
     <pressure>658849660</pressure>
     <layout>1000</layout>
     <component>Serpentine5</component>
-    <colorbound>White</colorbound>
+    <colorbound>Black</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -35,7 +35,7 @@
     <pressure>658849680</pressure>
     <layout>1750</layout>
     <component>Topaze3</component>
-    <colorbound>Silver</colorbound>
+    <colorbound>Azure</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -45,7 +45,7 @@
     <pressure>658849070</pressure>
     <layout>2000</layout>
     <component>AgateRubanée3</component>
-    <colorbound>Turquoise</colorbound>
+    <colorbound>Glod</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
     <result>0</result>

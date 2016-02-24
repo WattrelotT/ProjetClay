@@ -15,7 +15,7 @@
     <pressure>658849540</pressure>
     <layout>1250</layout>
     <component>Malachite1</component>
-    <colorbound>Red</colorbound>
+    <colorbound>Blue</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -25,7 +25,7 @@
     <pressure>658849560</pressure>
     <layout>1500</layout>
     <component>ObsidienneDorée2</component>
-    <colorbound>Blue</colorbound>
+    <colorbound>Black</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -35,7 +35,7 @@
     <pressure>658849580</pressure>
     <layout>1750</layout>
     <component>Onyx2</component>
-    <colorbound>Yellow</colorbound>
+    <colorbound>AliceBlue</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>

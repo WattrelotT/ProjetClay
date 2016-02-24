@@ -67,10 +67,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Graphique.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -80,9 +76,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Dataold.cs" />
-    <Compile Include="Graphique.xaml.cs">
-      <DependentUpon>Graphique.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -136,7 +129,9 @@
     <Resource Include="Resources\07092016.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\08092016.xml" />
+    <Resource Include="Resources\08092016.xml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\30092016.xml" />
@@ -181,7 +176,9 @@
     <Resource Include="Resources\27092016.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\28092016.xml" />
+    <Resource Include="Resources\28092016.xml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\29092016.xml" />

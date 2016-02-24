@@ -42,12 +42,19 @@ namespace ClayData
             }
             foreach(var a in ListDataCompare)
             {
-                foreach(var b in ListDataInsert)
+                int i = 0;
+                foreach (var b in ListDataInsert)
                 {
-                    if((b.date != a.date) && (b.lot != b.lot))
+                   
+                    if(a.lot == b.lot)
+                    {
+                        break;
+                    }
+                    if (i == ListDataInsert.Count)
                     {
                         MaClayEntities.Data.Add(b);
                     }
+                    i++;
                 }
             }
             MaClayEntities.SaveChanges();

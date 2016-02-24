@@ -5,6 +5,38 @@
     <pressure>658848951</pressure>
     <layout>1000</layout>
     <component>Quartz1</component>
+    <colorbound>Aqua</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="5500" lot="1125889564">
+    <offset>12</offset>
+    <pressure>658848961</pressure>
+    <layout>1250</layout>
+    <component>Shungite2</component>
+    <colorbound>Blue</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="6000" lot="1125889565">
+    <offset>13</offset>
+    <pressure>658848971</pressure>
+    <layout>1500</layout>
+    <component>Zircon3</component>
+    <colorbound>Glod</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889563">
+    <offset>11</offset>
+    <pressure>658848951</pressure>
+    <layout>1000</layout>
+    <component>Quartz1</component>
     <colorbound>Red</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
@@ -31,5 +63,197 @@
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889563">
+    <offset>11</offset>
+    <pressure>658848951</pressure>
+    <layout>1000</layout>
+    <component>Quartz1</component>
+    <colorbound>Red</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="5500" lot="1125889564">
+    <offset>12</offset>
+    <pressure>658848961</pressure>
+    <layout>1250</layout>
+    <component>Shungite2</component>
+    <colorbound>Blue</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="6000" lot="1125889565">
+    <offset>13</offset>
+    <pressure>658848971</pressure>
+    <layout>1500</layout>
+    <component>Zircon3</component>
+    <colorbound>Yellow</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889563">
+    <offset>11</offset>
+    <pressure>658848951</pressure>
+    <layout>1000</layout>
+    <component>Quartz1</component>
+    <colorbound>Red</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="5500" lot="1125889564">
+    <offset>12</offset>
+    <pressure>658848961</pressure>
+    <layout>1250</layout>
+    <component>Shungite2</component>
+    <colorbound>Blue</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="6000" lot="1125889565">
+    <offset>13</offset>
+    <pressure>658848971</pressure>
+    <layout>1500</layout>
+    <component>Zircon3</component>
+    <colorbound>Yellow</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889563">
+    <offset>11</offset>
+    <pressure>658848951</pressure>
+    <layout>1000</layout>
+    <component>Quartz1</component>
+    <colorbound>Red</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="5500" lot="1125889564">
+    <offset>12</offset>
+    <pressure>658848961</pressure>
+    <layout>1250</layout>
+    <component>Shungite2</component>
+    <colorbound>Blue</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="6000" lot="1125889565">
+    <offset>13</offset>
+    <pressure>658848971</pressure>
+    <layout>1500</layout>
+    <component>Zircon3</component>
+    <colorbound>Yellow</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+  </data>
+  <data timecode="5000" lot="1125889563">
+    <offset>11</offset>
+    <pressure>658848951</pressure>
+    <layout>1000</layout>
+    <component>Quartz1</component>
+    <colorbound>Red</colorbound>
+    <quality>Low</quality>
+    <performance>Medium</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="5500" lot="1125889564">
+    <offset>12</offset>
+    <pressure>658848961</pressure>
+    <layout>1250</layout>
+    <component>Shungite2</component>
+    <colorbound>Blue</colorbound>
+    <quality>Medium</quality>
+    <performance>High</performance>
+    <result>0</result>
+  </data>
+
+  <data timecode="6000" lot="1125889565">
+    <offset>13</offset>
+    <pressure>658848971</pressure>
+    <layout>1500</layout>
+    <component>Zircon3</component>
+    <colorbound>Yellow</colorbound>
+    <quality>High</quality>
+    <performance>Low</performance>
+    <result>0</result>
+    <data timecode="5000" lot="1125889563">
+      <offset>11</offset>
+      <pressure>658848951</pressure>
+      <layout>1000</layout>
+      <component>Quartz1</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889564">
+      <offset>12</offset>
+      <pressure>658848961</pressure>
+      <layout>1250</layout>
+      <component>Shungite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125889565">
+      <offset>13</offset>
+      <pressure>658848971</pressure>
+      <layout>1500</layout>
+      <component>Zircon3</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
+    <data timecode="5000" lot="1125889563">
+      <offset>11</offset>
+      <pressure>658848951</pressure>
+      <layout>1000</layout>
+      <component>Quartz1</component>
+      <colorbound>Red</colorbound>
+      <quality>Low</quality>
+      <performance>Medium</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="5500" lot="1125889564">
+      <offset>12</offset>
+      <pressure>658848961</pressure>
+      <layout>1250</layout>
+      <component>Shungite2</component>
+      <colorbound>Blue</colorbound>
+      <quality>Medium</quality>
+      <performance>High</performance>
+      <result>0</result>
+    </data>
+
+    <data timecode="6000" lot="1125889565">
+      <offset>13</offset>
+      <pressure>658848971</pressure>
+      <layout>1500</layout>
+      <component>Zircon3</component>
+      <colorbound>Yellow</colorbound>
+      <quality>High</quality>
+      <performance>Low</performance>
+      <result>0</result>
+    </data>
   </data>
 </datas>
