@@ -14,16 +14,16 @@ namespace ClayData
     
     public partial class Data
     {
+        public string lot { get; set; }
         public int offset { get; set; }
         public int pressure { get; set; }
-        public int layout { get; set; }
+        public System.DateTime date { get; set; }
         public string component { get; set; }
         public string colorbound { get; set; }
         public string quality { get; set; }
         public string performance { get; set; }
         public int result { get; set; }
         public int timecode { get; set; }
-        public string lot { get; set; }
-        public System.DateTime date { get; set; }
+        public int layout { get; set; }
     }
 }
