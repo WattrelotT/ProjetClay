@@ -5,7 +5,7 @@
     <pressure>658848951</pressure>
     <layout>1000</layout>
     <component>Quartz1</component>
-    <colorbound>Red</colorbound>
+    <colorbound>Aqua</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
     <result>0</result>
@@ -27,7 +27,7 @@
     <pressure>658848971</pressure>
     <layout>1500</layout>
     <component>Zircon3</component>
-    <colorbound>Yellow</colorbound>
+    <colorbound>Glod</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>

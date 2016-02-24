@@ -5,7 +5,7 @@
     <pressure>658849270</pressure>
     <layout>1000</layout>
     <component>Chrysoprase5</component>
-    <colorbound>Violet</colorbound>
+    <colorbound>AliceBlue</colorbound>
     <quality>Low</quality>
     <performance>Medium</performance>
     <result>0</result>
@@ -25,7 +25,7 @@
     <pressure>658849290</pressure>
     <layout>1500</layout>
     <component>Tanzanite1</component>
-    <colorbound>Mauve</colorbound>
+    <colorbound>Cyan</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
@@ -35,7 +35,7 @@
     <pressure>658849300</pressure>
     <layout>1750</layout>
     <component>FluorineJaune3</component>
-    <colorbound>Golden</colorbound>
+    <colorbound>Gold</colorbound>
     <quality>Medium</quality>
     <performance>High</performance>
     <result>1</result>
@@ -45,7 +45,7 @@
     <pressure>658849310</pressure>
     <layout>2000</layout>
     <component>Fuschite3</component>
-    <colorbound>Grey</colorbound>
+    <colorbound>Orange</colorbound>
     <quality>High</quality>
     <performance>Low</performance>
     <result>0</result>
