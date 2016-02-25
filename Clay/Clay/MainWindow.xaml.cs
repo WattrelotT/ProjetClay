@@ -44,9 +44,17 @@ namespace Clay
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
 
-            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\05092016.xml");
+            string sPath = @"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\";
+            foreach (string sFileName in System.IO.Directory.GetFiles(sPath))
+            {
+                if (System.IO.Path.GetExtension(sFileName) == ".xml")
+                {
+                    MalistDeData = MonParseurXml.LectureXML(sFileName);
             DataAcess MonDataAcess = new DataAcess();
             MonDataAcess.SetData(MalistDeData);
+                    MalistDeData.Clear();
+                }
+            }
             ListeDataGraph = MonDataAcess.GetAllData();
             Init();
             
@@ -100,7 +108,6 @@ namespace Clay
                 {
                     quality.Add(item.quality);
                 }
-
                 if (!isInList(layout, item.layout.ToString()))
                 {
                     layout.Add(item.layout.ToString());
@@ -360,8 +367,6 @@ namespace Clay
                      select lotItem.layout.ToString();
             lColor = col.Distinct().ToList();
 
-
-            
             //LotDropDown.Items.Clear();
             lot = lLot;
             LotDropDown.ItemsSource = lot;
@@ -402,7 +407,6 @@ namespace Clay
                 }
                 switch (color)
                 {
-
                     case "Green":
                         cell.Background = new SolidColorBrush(Colors.DarkGreen);
                         cell.Foreground = new SolidColorBrush(Colors.White);
@@ -443,7 +447,6 @@ namespace Clay
                         cell.Background = new SolidColorBrush(Colors.Transparent);
                         cell.Foreground = new SolidColorBrush(Colors.Black);
                         break;
-
                 }
             }
         }
@@ -452,25 +455,19 @@ namespace Clay
         private void Extraire_Click(object sender, RoutedEventArgs e)
         {
             InitializeComponent();
+            ParseurXml MonParseurXml = new ParseurXml();
+            var value = MonthDropDown.SelectedItem;
+            if (value != null)
+            {
             progressBar.Visibility = Visibility.Visible;
             progressBar.IsIndeterminate = true;
-            ParseurXml MonParseurXml = new ParseurXml();
-            //List<Data> MalistDeData = new List<Data>();
-            //MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml")
-
-            // ... Set SelectedItem as Window Title.
-            var value = MonthDropDown.SelectedItem;
-
-
             string pMoisAnnee = value.ToString();
 
             List<Data> ListeTrier = new List<Data>();
             DataAcess MonDataAcess = new DataAcess();
            
-
             foreach (var item in MonDataAcess.GetAllData())
             {
-                
                 if (item.date.ToString("MMyyyy") == pMoisAnnee)
                 {
                     ListeTrier.Add(item);
@@ -487,13 +484,8 @@ namespace Clay
                 {
                     progressBar.Visibility = Visibility.Hidden;
                 });
-
             }).Start();
-
-            
-
+            }  
         }
-
-
     }
 }
