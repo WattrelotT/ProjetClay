@@ -51,7 +51,9 @@ namespace Clay
         private void Graphique_Click(object sender, RoutedEventArgs e)
         {
             MainPage graph = new MainPage();
-            this.Content = graph;
+            var w = new Window();
+            w.Content = graph;
+            w.Show();
         }
 
         private void Init()
