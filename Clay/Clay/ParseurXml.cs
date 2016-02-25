@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using ClayData;
+using System.Xml;
 
 namespace Clay
 {
@@ -52,10 +53,38 @@ namespace Clay
                 MaListData.Add(MesData);
             }
 
-            
-
-
             return MaListData;
+        }
+
+        public void WriteXmlDependMonth(List<Data> pMalistDeData, string pMoisAnnee)
+        {
+
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//Résumé du " + pMoisAnnee + ".xml";
+
+            XmlTextWriter myXmlTextWriter = new XmlTextWriter(path, Encoding.UTF8);
+            myXmlTextWriter.Formatting = Formatting.Indented;
+            myXmlTextWriter.WriteStartDocument(false);
+            myXmlTextWriter.WriteStartElement("datas");
+            myXmlTextWriter.WriteAttributeString("date", pMoisAnnee);
+
+            foreach (var item in pMalistDeData)
+            {
+                string date = item.date.ToString("dd/MM/yyyy");
+
+                myXmlTextWriter.WriteStartElement("data");
+                myXmlTextWriter.WriteAttributeString("date", date);
+                myXmlTextWriter.WriteAttributeString("lot", item.lot);
+                myXmlTextWriter.WriteElementString("quality", item.quality);
+                myXmlTextWriter.WriteElementString("performance", item.performance);
+                myXmlTextWriter.WriteElementString("color", item.colorbound);
+                myXmlTextWriter.WriteElementString("Component", item.component);
+                myXmlTextWriter.WriteEndElement();
+            }
+
+            myXmlTextWriter.WriteEndElement();
+            myXmlTextWriter.Flush();
+            myXmlTextWriter.Close();
+
         }
     }
 }

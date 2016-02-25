@@ -29,6 +29,7 @@ namespace Clay
         public List<string> layout { get; set; }
         public List<string> quality { get; set; }
         public List<string> performance { get; set; }
+        public List<string> month { get; set; }
 
         public bool programmaticChange { get; set; }
 
@@ -45,6 +46,7 @@ namespace Clay
             performance = new List<string>();
             layout = new List<string>();
             component = new List<string>();
+            month = new List<string>();
 
             MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\09092016.xml");
             DataAcess MonDataAcess = new DataAcess();
@@ -70,6 +72,11 @@ namespace Clay
                 {
                     component.Add(item.component);
                 }
+                if(!isInList(month, item.date.ToString("MMyyyy")))
+                {
+                    month.Add(item.date.ToString("MMyyyy"));
+            }
+
             }
 
             LotDropDown.ItemsSource = lot;
@@ -82,6 +89,8 @@ namespace Clay
             ComponentDropDown.Items.Refresh();
             LayoutDropDown.ItemsSource = layout;
             LayoutDropDown.Items.Refresh();
+            MonthDropDown.ItemsSource = month;
+            MonthDropDown.Items.Refresh();
 
             Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
         }
@@ -232,6 +241,37 @@ namespace Clay
                 }
             }
             return child;
+        }
+
+        private void ComboBox_SelectionChanged_Month(object sender, SelectionChangedEventArgs e)
+        {
+            if (programmaticChange)
+            {
+                return;
+            }
+            // ... Get the ComboBox.
+            var comboBox = sender as ComboBox;
+
+            // ... Set SelectedItem as Window Title.
+            var value = comboBox.SelectedItem;
+
+            List<Data> MalistDeData = new List<Data>();
+
+            List<string> lMonth = new List<string>();
+
+            DataAcess MonDataAcess = new DataAcess();
+            MalistDeData = MonDataAcess.GetAllData();
+
+            string _Month = MonthDropDown.SelectedValue == null ? "" : MonthDropDown.SelectedValue.ToString();
+
+            var m = from MonthItem in MalistDeData
+                    select MonthItem.date.ToString("MMyyyy");
+            lMonth = m.Distinct().ToList();
+
+            month = lMonth;
+            MonthDropDown.ItemsSource = month;
+            MonthDropDown.Items.Refresh();
+
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -385,6 +425,35 @@ namespace Clay
 
                 }
             }
+        }
+
+        private void Extraire_Click(object sender, RoutedEventArgs e)
+        {
+            InitializeComponent();
+
+            ParseurXml MonParseurXml = new ParseurXml();
+            //List<Data> MalistDeData = new List<Data>();
+            //MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml")
+
+            // ... Set SelectedItem as Window Title.
+            var value = MonthDropDown.SelectedItem;
+
+
+            string pMoisAnnee = value.ToString();
+
+            List<Data> ListeTrier = new List<Data>();
+            DataAcess MonDataAcess = new DataAcess();
+           
+
+            foreach (var item in MonDataAcess.GetAllData())
+            {
+                if (item.date.ToString("MMyyyy") == pMoisAnnee)
+                {
+                    ListeTrier.Add(item);
+                }
+            }
+
+            MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
         }
     }
 }
