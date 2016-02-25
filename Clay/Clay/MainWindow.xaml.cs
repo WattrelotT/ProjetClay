@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using Clay.Properties;
 using System.Windows.Controls.Primitives;
 using ClayData;
+using System.Threading;
 
 namespace Clay
 {
@@ -30,28 +31,46 @@ namespace Clay
         public List<string> quality { get; set; }
         public List<string> performance { get; set; }
         public List<string> month { get; set; }
+        public List<string> color { get; set; }
 
         public bool programmaticChange { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
-
-            
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
-            
+
+            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Alexandre\Documents\GitHubVisualStudio\ProjetClay\Clay\Clay\Resources\02092016.xml");
+            DataAcess MonDataAcess = new DataAcess();
+            MonDataAcess.SetData(MalistDeData);
+            Init();
+
+        }
+
+        private void Graphique_Click(object sender, RoutedEventArgs e)
+        {
+            MainPage graph = new MainPage();
+            this.Content = graph;
+        }
+
+        private void Init()
+        {
+            List<Data> MalistDeData = new List<Data>();
+            ParseurXml MonParseurXml = new ParseurXml();
+
             lot = new List<string>();
             quality = new List<string>();
             performance = new List<string>();
             layout = new List<string>();
             component = new List<string>();
+            color = new List<string>();
             month = new List<string>();
 
-            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\01092016.xml");
             DataAcess MonDataAcess = new DataAcess();
-            MonDataAcess.SetData(MalistDeData);
             dataGrid.DataContext = MonDataAcess.GetAllData();
+            dataGrid.ItemsSource =  MonDataAcess.GetAllData();
+            MalistDeData = MonDataAcess.GetAllData();
             foreach (var item in MalistDeData)
             {
                 lot.Add(item.lot);
@@ -72,11 +91,15 @@ namespace Clay
                 {
                     component.Add(item.component);
                 }
-                if(!isInList(month, item.date.ToString("MMyyyy")))
+                if (!isInList(color, item.colorbound))
+                {
+                    color.Add(item.colorbound);
+                }
+                if (!isInList(month, item.date.ToString("MMyyyy")))
                 {
                     month.Add(item.date.ToString("MMyyyy"));
                 }
-                
+
             }
 
             LotDropDown.ItemsSource = lot;
@@ -89,57 +112,12 @@ namespace Clay
             ComponentDropDown.Items.Refresh();
             LayoutDropDown.ItemsSource = layout;
             LayoutDropDown.Items.Refresh();
+            ColorDropDown.ItemsSource = color;
+            ColorDropDown.Items.Refresh();
             MonthDropDown.ItemsSource = month;
             MonthDropDown.Items.Refresh();
-
-            Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
-        }
-
-        private void Graphique_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Init()
-        {
-            lot = new List<string>();
-            quality = new List<string>();
-            performance = new List<string>();
-            layout = new List<string>();
-            component = new List<string>();
-
-            DataAcess MonDataAcess = new DataAcess();
-            dataGrid.DataContext = MonDataAcess.GetAllData();
-            dataGrid.ItemsSource = MonDataAcess.GetAllData();
-            List<Data> MalistDeData = new List<Data>();
-            MalistDeData = MonDataAcess.GetAllData();
-
-            foreach (var item in MalistDeData)
-            {
-                lot.Add(item.lot);
-                if (!isInList(quality, item.quality))
-                {
-                    quality.Add(item.quality);
-                }
-                layout.Add(item.layout.ToString());
-                if (!isInList(performance, item.performance))
-                {
-                    performance.Add(item.performance);
-                }
-
-                component.Add(item.component);
-            }
-            
-            LotDropDown.ItemsSource = lot;
-            LotDropDown.Items.Refresh();
-            QualityDropDown.ItemsSource = quality;
-            QualityDropDown.Items.Refresh();
-            PerformanceDropDown.ItemsSource = performance;
-            PerformanceDropDown.Items.Refresh();
-            ComponentDropDown.ItemsSource = component;
-            ComponentDropDown.Items.Refresh();
-            LayoutDropDown.ItemsSource = layout;
-            LayoutDropDown.Items.Refresh();
+            Date.SelectedDate = null;
+            Date.Text = "";
 
             Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.ApplicationIdle, new Action(ProcessRows));
         }
@@ -181,14 +159,18 @@ namespace Clay
             string _component = ComponentDropDown.SelectedValue == null ? "" : ComponentDropDown.SelectedValue.ToString();
             string _performance = PerformanceDropDown.SelectedValue == null ? "" : PerformanceDropDown.SelectedValue.ToString();
             string _quality = QualityDropDown.SelectedValue == null ? "" : QualityDropDown.SelectedValue.ToString();
+            string _color = ColorDropDown.SelectedValue == null ? "" : ColorDropDown.SelectedValue.ToString();
+            string _date = Date.SelectedDate == null ? "" : Date.SelectedDate.ToString();
 
             var items = from lotItem in MalistDeData
                     where (_quality == "" || lotItem.quality == _quality) &&
                           (_performance == "" || lotItem.performance == _performance) &&
                           (_layout == "" || lotItem.layout.ToString() == _layout) &&
                           (_component == "" || lotItem.component == _component) &&
-                          (_lot == "" || lotItem.lot == _lot)
-                    select lotItem;
+                          (_lot == "" || lotItem.lot == _lot) &&
+                          (_color == "" || lotItem.colorbound == _color) &&
+                          (_date == "" || lotItem.date.ToString() == _date)
+                        select lotItem;
             dataGrid.DataContext = items.ToList();
             dataGrid.ItemsSource = items.ToList();
 
@@ -205,6 +187,7 @@ namespace Clay
             QualityDropDown.SelectedIndex = -1;
             PerformanceDropDown.SelectedIndex = -1;
             LayoutDropDown.SelectedIndex = -1;
+            ColorDropDown.SelectedIndex = -1;
             programmaticChange = false;
             //LotDropDown.Text = "";
             //ComponentDropDown.Text = "";
@@ -279,11 +262,6 @@ namespace Clay
             {
                 return;
             }
-            // ... Get the ComboBox.
-            var comboBox = sender as ComboBox;
-
-            // ... Set SelectedItem as Window Title.
-            var value = comboBox.SelectedItem;
 
             List<Data> MalistDeData = new List<Data>();
             
@@ -292,6 +270,7 @@ namespace Clay
             List<string> lComponent = new List<string>();
             List<string> lQuality = new List<string>();
             List<string> lPerformance = new List<string>();
+            List<string> lColor = new List<string>();
             
             DataAcess MonDataAcess = new DataAcess();
             MalistDeData = MonDataAcess.GetAllData();
@@ -301,45 +280,66 @@ namespace Clay
             string _component = ComponentDropDown.SelectedValue == null ? "" : ComponentDropDown.SelectedValue.ToString();
             string _performance = PerformanceDropDown.SelectedValue == null ? "" : PerformanceDropDown.SelectedValue.ToString();
             string _quality = QualityDropDown.SelectedValue == null ? "" : QualityDropDown.SelectedValue.ToString();
+            string _color = ColorDropDown.SelectedValue == null ? "" : ColorDropDown.SelectedValue.ToString();
+            string _date = Date.SelectedDate == null ? "" : Date.SelectedDate.ToString();
 
             var l = from lotItem in MalistDeData
                    where (_quality == "" || lotItem.quality == _quality) &&
                          (_performance == "" || lotItem.performance == _performance) &&
                          (_layout == "" || lotItem.layout.ToString() == _layout) &&
-                         (_component == "" || lotItem.component == _component) 
+                         (_component == "" || lotItem.component == _component) &&
+                         (_color == "" || lotItem.colorbound == _color) && 
+                         (_date == "" || lotItem.date.ToString() == _date)
                     select lotItem.lot;
             lLot = l.Distinct().ToList();
             var p = from lotItem in MalistDeData
                     where (_quality == "" || lotItem.quality == _quality) &&
                           (_lot == "" || lotItem.lot == _lot) &&
                           (_layout == "" || lotItem.layout.ToString() == _layout) &&
-                          (_component == "" || lotItem.component == _component)
+                          (_component == "" || lotItem.component == _component) &&
+                         (_color == "" || lotItem.colorbound == _color) &&
+                         (_date == "" || lotItem.date.ToString() == _date)
                     select lotItem.performance;
             lPerformance = p.Distinct().ToList();
             var q = from lotItem in MalistDeData
                     where (_lot == "" || lotItem.lot == _lot) &&
                           (_performance == "" || lotItem.performance == _performance) &&
                           (_layout == "" || lotItem.layout.ToString() == _layout) &&
-                          (_component == "" || lotItem.component == _component)
+                          (_component == "" || lotItem.component == _component) &&
+                          (_color == "" || lotItem.colorbound == _color) &&
+                          (_date == "" || lotItem.date.ToString() == _date)
                     select lotItem.quality;
             lQuality = q.Distinct().ToList();
             var c = from lotItem in MalistDeData
                     where (_quality == "" || lotItem.quality == _quality) &&
                           (_performance == "" || lotItem.performance == _performance) &&
                           (_layout == "" || lotItem.layout.ToString() == _layout) &&
-                          (_lot == "" || lotItem.lot == _lot)
+                          (_lot == "" || lotItem.lot == _lot) &&
+                          (_color == "" || lotItem.colorbound == _color) &&
+                          (_date == "" || lotItem.date.ToString() == _date)
                     select lotItem.component;
             lComponent = c.Distinct().ToList();
             var la = from lotItem in MalistDeData
                     where (_quality == "" || lotItem.quality == _quality) &&
                           (_performance == "" || lotItem.performance == _performance) &&
                           (_lot == "" || lotItem.lot == _lot) &&
-                          (_component == "" || lotItem.component == _component)
-                    select lotItem.layout.ToString();
+                          (_component == "" || lotItem.component == _component) &&
+                          (_color == "" || lotItem.colorbound == _color) &&
+                          (_date == "" || lotItem.date.ToString() == _date)
+                     select lotItem.layout.ToString();
             lLayout = la.Distinct().ToList();
+            var col = from lotItem in MalistDeData
+                     where (_quality == "" || lotItem.quality == _quality) &&
+                           (_performance == "" || lotItem.performance == _performance) &&
+                           (_lot == "" || lotItem.lot == _lot) &&
+                           (_component == "" || lotItem.component == _component) &&
+                           (_layout == "" || lotItem.layout.ToString() == _layout) &&
+                           (_date == "" || lotItem.date.ToString() == _date)
+                     select lotItem.layout.ToString();
+            lColor = col.Distinct().ToList();
 
 
-            
+
             //LotDropDown.Items.Clear();
             lot = lLot;
             LotDropDown.ItemsSource = lot;
@@ -426,10 +426,12 @@ namespace Clay
             }
         }
 
+
         private void Extraire_Click(object sender, RoutedEventArgs e)
         {
             InitializeComponent();
-
+            progressBar.Visibility = Visibility.Visible;
+            progressBar.IsIndeterminate = true;
             ParseurXml MonParseurXml = new ParseurXml();
             //List<Data> MalistDeData = new List<Data>();
             //MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml")
@@ -446,13 +448,30 @@ namespace Clay
 
             foreach (var item in MonDataAcess.GetAllData())
             {
+                
                 if (item.date.ToString("MMyyyy") == pMoisAnnee)
                 {
                     ListeTrier.Add(item);
                 }
             }
 
-            MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
+            new Thread((ThreadStart)delegate
+            {
+                //do time-consuming work here
+                MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
+                Thread.Sleep(2000);
+                //then dispatch back to the UI thread to update the progress bar
+                Dispatcher.Invoke((ThreadStart)delegate
+                {
+                    progressBar.Visibility = Visibility.Hidden;
+                });
+
+            }).Start();
+
+            
+
         }
+
+
     }
 }

@@ -40,24 +40,27 @@ namespace ClayData
                     MaClayEntities.Data.Add(c);
                 }
             }
-            foreach(var a in ListDataCompare)
-            {
-                int i = 0;
                 foreach (var b in ListDataInsert)
                 {
-                   
-                    if(a.lot == b.lot)
-                    {
-                        break;
-                    }
-                    if (i == ListDataInsert.Count)
+                  if ( !isInList(ListDataCompare, b))
                     {
                         MaClayEntities.Data.Add(b);
-                    }
-                    i++;
+                    } 
+                }
+            MaClayEntities.SaveChanges();
+        }
+
+        private bool isInList(List<Data> list, Data value)
+        {
+            foreach (Data item in list)
+            {
+                if ( item.lot == value.lot)
+                {
+                    return true;
                 }
             }
-            MaClayEntities.SaveChanges();
+            return false;
+
         }
     }
 }
