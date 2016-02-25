@@ -20,10 +20,10 @@ namespace Clay
     /// </summary>
         public sealed partial class MainPage : Page
         {
-            public MainPage()
+            public MainPage(List<ClayData.Data> MalistDeData)
             {
                 this.InitializeComponent();
-                this.DataContext = new MainViewModel();
+                this.DataContext = new MainViewModel(MalistDeData);
             }
         }
     

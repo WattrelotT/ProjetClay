@@ -33,11 +33,14 @@ namespace Clay
         public List<string> month { get; set; }
         public List<string> color { get; set; }
 
+        List<Data> ListeDataGraph;
+
         public bool programmaticChange { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
+            ListeDataGraph = new List<Data>();
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
 
@@ -47,11 +50,12 @@ namespace Clay
                 if (System.IO.Path.GetExtension(sFileName) == ".xml")
                 {
                     MalistDeData = MonParseurXml.LectureXML(sFileName);
-                    DataAcess MonDataAcess = new DataAcess();
-                    MonDataAcess.SetData(MalistDeData);
+            DataAcess MonDataAcess = new DataAcess();
+            MonDataAcess.SetData(MalistDeData);
                     MalistDeData.Clear();
                 }
             }
+            ListeDataGraph = MonDataAcess.GetAllData();
             Init();
             
         }
@@ -59,7 +63,9 @@ namespace Clay
         private void Graphique_Click(object sender, RoutedEventArgs e)
         {
             MainPage graph = new MainPage();
-            this.Content = graph;
+            var w = new Window();
+            w.Content = graph;
+            w.Show();
         }
 
         private void Init()
@@ -344,7 +350,7 @@ namespace Clay
                            (_date == "" || lotItem.date.ToString() == _date)
                      select lotItem.layout.ToString();
             lColor = col.Distinct().ToList();
-            
+
             //LotDropDown.Items.Clear();
             lot = lLot;
             LotDropDown.ItemsSource = lot;
@@ -437,32 +443,32 @@ namespace Clay
             var value = MonthDropDown.SelectedItem;
             if (value != null)
             {
-                progressBar.Visibility = Visibility.Visible;
-                progressBar.IsIndeterminate = true;
-                string pMoisAnnee = value.ToString();
+            progressBar.Visibility = Visibility.Visible;
+            progressBar.IsIndeterminate = true;
+            string pMoisAnnee = value.ToString();
 
-                List<Data> ListeTrier = new List<Data>();
-                DataAcess MonDataAcess = new DataAcess();
-
-                foreach (var item in MonDataAcess.GetAllData())
+            List<Data> ListeTrier = new List<Data>();
+            DataAcess MonDataAcess = new DataAcess();
+           
+            foreach (var item in MonDataAcess.GetAllData())
+            {
+                if (item.date.ToString("MMyyyy") == pMoisAnnee)
                 {
-                    if (item.date.ToString("MMyyyy") == pMoisAnnee)
-                    {
-                        ListeTrier.Add(item);
-                    }
+                    ListeTrier.Add(item);
                 }
+            }
 
-                new Thread((ThreadStart)delegate
+            new Thread((ThreadStart)delegate
+            {
+                //do time-consuming work here
+            MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
+                Thread.Sleep(2000);
+                //then dispatch back to the UI thread to update the progress bar
+                Dispatcher.Invoke((ThreadStart)delegate
                 {
-                    //do time-consuming work here
-                    MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
-                    Thread.Sleep(2000);
-                    //then dispatch back to the UI thread to update the progress bar
-                    Dispatcher.Invoke((ThreadStart)delegate
-                    {
-                        progressBar.Visibility = Visibility.Hidden;
-                    });
-                }).Start();
+                    progressBar.Visibility = Visibility.Hidden;
+                });
+            }).Start();
             }  
         }
     }
