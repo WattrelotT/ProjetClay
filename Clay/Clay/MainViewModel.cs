@@ -40,7 +40,7 @@ namespace Clay
             get
             {
                 return _nombrelotcolor;
-        }
+            }
         }
 
         public MainViewModel(List<ClayData.Data> MalistDeData)
@@ -93,7 +93,7 @@ namespace Clay
                     if ( d.colorbound == item.name){
                         item.count++;
                     }
-            }
+                }
             }
             foreach (Couleur item in MaListeDecouleur)
             {

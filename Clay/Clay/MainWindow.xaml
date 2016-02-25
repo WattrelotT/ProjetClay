@@ -10,19 +10,19 @@
     <Window.Resources>
         <BitmapImage x:Key ="Logo" UriSource="/Images/logo.png" />
     </Window.Resources>
-
+    
     <Grid>
         <Separator HorizontalAlignment="Left" Height="25" Margin="10,44,0,0" VerticalAlignment="Top" Width="1174"/>
         <Image x:Name="logo" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" VerticalAlignment="Top" Width="38" Source="{StaticResource ResourceKey=Logo}"/>
         <Label x:Name="title" Content="Gestion de production" FontFamily="Verdana" HorizontalAlignment="Left" Margin="53,20,0,0" VerticalAlignment="Top" Width="281" FontWeight="Bold" FontStyle="Italic"/>
 
-        <Grid HorizontalAlignment="Left" Height="430" Margin="33,74,0,0" VerticalAlignment="Top" Width="236">
-            <Border BorderBrush="Black" BorderThickness="1" Margin="0,22,-16,-24"/>
+        <Grid HorizontalAlignment="Left" Height="389" Margin="33,74,0,0" VerticalAlignment="Top" Width="236">
+            <Border BorderBrush="Black" BorderThickness="1" Margin="0,22,-16,-6"/>
             <Label  x:Name="Lot" Content="Lot" Margin="10,31,197,333" Width="29" Height="25"/>
             <ComboBox x:Name="LotDropDown" ItemsSource="{Binding Path=lot}" SelectionChanged="ComboBox_SelectionChanged" Margin="100,36,-4,333" Width="140" Height="20"/>
             <Label x:Name="Quality" Content="Quality" Margin="10,134,171,226" Width="55" Height="29"/>
             <ComboBox x:Name="QualityDropDown" ItemsSource="{Binding Path=quality}" SelectionChanged="ComboBox_SelectionChanged" Margin="100,139,-4,230" Height="20" Width="140"/>
-            <Label x:Name="Layout" Content="Layout" Margin="10,119,179,279" Width="47"/>
+            <Label x:Name="Layout" Content="Layout" Margin="10,99,179,260" Width="47"/>
             <ComboBox x:Name="LayoutDropDown" ItemsSource="{Binding Path=layout}" SelectionChanged="ComboBox_SelectionChanged" Margin="100,103,-4,266" Height="20" Width="140"/>
             <Label x:Name="Component" Content="Component" Margin="10,63,153,300" Width="73" Height="26"/>
             <ComboBox x:Name="ComponentDropDown" ItemsSource="{Binding Path=component}" SelectionChanged="ComboBox_SelectionChanged" Margin="100,69,-4,300" Height="20" Width="140"/>
@@ -33,10 +33,7 @@
             <DatePicker x:Name="Date" SelectedDateChanged="ComboBox_SelectionChanged" Margin="0,242,-4,122" Height="25" Width="140" HorizontalAlignment="Right" />
             <Button x:Name="Reset" Content="Réinitialiser" Click="Reset_Click" Width="80" Height="20" Margin="141,286,15,83" />
             <Button x:Name="Valider" Content="Valider" Width="80" Height="20" Margin="29,286,127,83" Click="Valider_Click" />
-            <Button x:Name="LotQuality" Content="Lot/Qualité" Margin="29,337,15,73" Click="LotQuality_Click" />
-            <Button x:Name="PerformanceLayout" Content="Layout/Performance" Margin="29,393,15,17" Click="PerformanceLayout_Click" />
-            <Button x:Name="QualityComponent" Content="Composants/Qualité" Margin="29,365,15,45" Click="QualityComponent_Click" Height="20" />
-            <Button x:Name="NombreLotColor" Content="Nombre lots/Couleur" Margin="29,423,15,-13" Click="NumberLotColor_Click" Height="20" />
+            <Button x:Name="Graphique" Content="Graphique" Margin="29,328,15,20" Click="Graphique_Click" Width="192" Height="41" />
             <Label x:Name="DateLabel" Content="Date" Margin="10,242,141,123" Height="24" Width="85"/>
         </Grid>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="322,90,0,0" VirtualizingStackPanel.IsVirtualizing="False" VirtualizingPanel.VirtualizationMode="Standard" VerticalAlignment="Top" Height="619" Width="810" ItemsSource="{Binding}" AutoGenerateColumns="False" IsReadOnly="True">
@@ -59,14 +56,13 @@
                 <DataGridTextColumn Binding="{Binding timecode}" Header="TimeCode"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="159" Margin="53,550,0,0" VerticalAlignment="Top" Width="216">
-            <Button x:Name="Extraire" Content="Extraire" HorizontalAlignment="Left" Height="64" Margin="10,52,0,0" VerticalAlignment="Top" Width="196" Click="Extraire_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="159" Margin="53,501,0,0" VerticalAlignment="Top" Width="216">
+            <Button x:Name="Extraire" Content="Extraire" HorizontalAlignment="Left" Height="64" Margin="9,55,0,0" VerticalAlignment="Top" Width="196" Click="Extraire_Click"/>
         </Border>
-        <Grid Margin="0,10,40,29.5">
-            <ProgressBar Minimum="0" Maximum="100" Name="progressBar" Height="17" VerticalAlignment="Center" Margin="62,669,889,46" Cursor="Arrow" Visibility="Hidden" />
-
+        <Grid Margin="30,-9,10,48.5">
+            <ProgressBar Minimum="0" Maximum="100" Name="progressBar" Height="17" VerticalAlignment="Center" Margin="33,640,918,75" Cursor="Arrow" Visibility="Hidden" />
         </Grid>
-        <ComboBox x:Name="MonthDropDown" ItemsSource="{Binding Path=Month}" SelectionChanged="ComboBox_SelectionChanged_Month" HorizontalAlignment="Left" Margin="65,566,0,0" VerticalAlignment="Top" Width="194"/>
+        <ComboBox x:Name="MonthDropDown" ItemsSource="{Binding Path=Month}" SelectionChanged="ComboBox_SelectionChanged_Month" HorizontalAlignment="Left" Margin="64,523,0,0" VerticalAlignment="Top" Width="194"/>
     </Grid>
 
 </Window>

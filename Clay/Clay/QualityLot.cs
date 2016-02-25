@@ -11,7 +11,7 @@ namespace Clay
     public class QualityLot : INotifyPropertyChanged
     {
         private int _quality = 0;
-        private double _lot = 0;
+        private int _lot = 0;
 
         public int Quality
         {
@@ -26,7 +26,7 @@ namespace Clay
             }
         }
 
-        public double Lot
+        public int Lot
         {
             get
             {

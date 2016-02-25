@@ -44,56 +44,24 @@ namespace Clay
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
 
-            string sPath = @"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\";
+            string sPath = @"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\";
+            DataAcess MonDataAcess = new DataAcess();
             foreach (string sFileName in System.IO.Directory.GetFiles(sPath))
             {
                 if (System.IO.Path.GetExtension(sFileName) == ".xml")
                 {
                     MalistDeData = MonParseurXml.LectureXML(sFileName);
-            DataAcess MonDataAcess = new DataAcess();
+            
             MonDataAcess.SetData(MalistDeData);
                     MalistDeData.Clear();
                 }
             }
             ListeDataGraph = MonDataAcess.GetAllData();
-            string _lot = LotDropDown.SelectedValue == null ? "" : LotDropDown.SelectedValue.ToString();
-            string _layout = LayoutDropDown.SelectedValue == null ? "" : LayoutDropDown.SelectedValue.ToString();
-            string _component = ComponentDropDown.SelectedValue == null ? "" : ComponentDropDown.SelectedValue.ToString();
-            string _performance = PerformanceDropDown.SelectedValue == null ? "" : PerformanceDropDown.SelectedValue.ToString();
-            string _quality = QualityDropDown.SelectedValue == null ? "" : QualityDropDown.SelectedValue.ToString();
-            string _color = ColorDropDown.SelectedValue == null ? "" : ColorDropDown.SelectedValue.ToString();
-            string _date = Date.SelectedDate == null ? "" : Date.SelectedDate.ToString();
-            var items = from lotItem in ListeDataGraph
-                        where (_quality == "" || lotItem.quality == _quality) &&
-                              (_performance == "" || lotItem.performance == _performance) &&
-                              (_layout == "" || lotItem.layout.ToString() == _layout) &&
-                              (_component == "" || lotItem.component == _component) &&
-                              (_lot == "" || lotItem.lot == _lot) &&
-                              (_color == "" || lotItem.colorbound == _color) &&
-                              (_date == "" || lotItem.date.ToString() == _date)
-                        select lotItem;
-            ListeDataGraph = items.ToList();
             Init();
             
         }
 
-        private void LotQuality_Click(object sender, RoutedEventArgs e)
-        {
-            MainPage graph = new MainPage(ListeDataGraph);
-            var w = new Window();
-            w.Content = graph;
-            w.Show();
-        }
-
-        private void PerformanceLayout_Click(object sender, RoutedEventArgs e)
-        {
-            MainPage graph = new MainPage(ListeDataGraph);
-            var w = new Window();
-            w.Content = graph;
-            w.Show();
-        }
-
-        private void QualityComponent_Click(object sender, RoutedEventArgs e)
+        private void Graphique_Click(object sender, RoutedEventArgs e)
         {
             MainPage graph = new MainPage(ListeDataGraph);
             GraphQualityComponent graph2 = new GraphQualityComponent(ListeDataGraph);
@@ -115,14 +83,6 @@ namespace Clay
             var w3 = new Window();
             w3.Content = graph4;
             w3.Show();
-        }
-
-        private void NumberLotColor_Click(object sender, RoutedEventArgs e)
-        {
-            MainPage graph = new MainPage(ListeDataGraph);
-            var w = new Window();
-            w.Content = graph;
-            w.Show();
         }
 
         private void Init()
@@ -456,28 +416,28 @@ namespace Clay
                         cell.Background = new SolidColorBrush(Colors.Black);
                         cell.Foreground = new SolidColorBrush(Colors.White);
                         break;
-                    case "Azure":
-                        cell.Background = new SolidColorBrush(Colors.DarkViolet);
+                    case "Yellow":
+                        cell.Background = new SolidColorBrush(Colors.Yellow);
                         cell.Foreground = new SolidColorBrush(Colors.Black);
                         break;
-                    case "AliceBlue":
-                        cell.Background = new SolidColorBrush(Colors.DarkGray);
+                    case "Red":
+                        cell.Background = new SolidColorBrush(Colors.Red);
+                        cell.Foreground = new SolidColorBrush(Colors.White);
+                        break;
+                    case "Pink":
+                        cell.Background = new SolidColorBrush(Colors.LightPink);
                         cell.Foreground = new SolidColorBrush(Colors.Black);
                         break;
-                    case "Glod":
-                        cell.Background = new SolidColorBrush(Colors.Gold);
-                        cell.Foreground = new SolidColorBrush(Colors.Black);
-                        break;
-                    case "Cyan":
-                        cell.Background = new SolidColorBrush(Colors.Cyan);
-                        cell.Foreground = new SolidColorBrush(Colors.Black);
+                    case "Gray":
+                        cell.Background = new SolidColorBrush(Colors.Gray);
+                        cell.Foreground = new SolidColorBrush(Colors.DarkGreen);
                         break;
                     case "Blue":
                         cell.Background = new SolidColorBrush(Colors.Blue);
                         cell.Foreground = new SolidColorBrush(Colors.White);
                         break;
-                    case "Aqua":
-                        cell.Background = new SolidColorBrush(Colors.LightGreen);
+                    case "White":
+                        cell.Background = new SolidColorBrush(Colors.White);
                         cell.Foreground = new SolidColorBrush(Colors.Black);
                         break;
                     case "Orange":
