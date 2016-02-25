@@ -33,24 +33,28 @@ namespace Clay
         public List<string> month { get; set; }
         public List<string> color { get; set; }
 
+        List<Data> ListeDataGraph;
+
         public bool programmaticChange { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
+            ListeDataGraph = new List<Data>();
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
 
-            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Alexandre\Documents\GitHubVisualStudio\ProjetClay\Clay\Clay\Resources\02092016.xml");
+            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\05092016.xml");
             DataAcess MonDataAcess = new DataAcess();
             MonDataAcess.SetData(MalistDeData);
+            ListeDataGraph = MonDataAcess.GetAllData();
             Init();
             
         }
 
         private void Graphique_Click(object sender, RoutedEventArgs e)
         {
-            MainPage graph = new MainPage();
+            MainPage graph = new MainPage(ListeDataGraph);
             this.Content = graph;
         }
 

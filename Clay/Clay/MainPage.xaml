@@ -9,13 +9,13 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="MainPage">
 
-    <chart:PieChart ChartSubTitle="Population in millions"  
-                ChartTitle="Countries by population">
-        <chart:PieChart.Series>
-            <chart:ChartSeries DisplayMember="Name"
-                            ItemsSource="{Binding Path=Populations}"
-                            SeriesTitle="World largest populations"
-                            ValueMember="Count" />
-        </chart:PieChart.Series>
-    </chart:PieChart>
+    <chart:ClusteredColumnChart ChartSubTitle="" ChartTitle="Quality/Lot">
+        <chart:ClusteredColumnChart.Series>
+            <chart:ChartSeries DisplayMember="Lot"
+                           ItemsSource="{Binding Path=QualityLot}"
+                           SeriesTitle="Quality/Lot"
+                           ValueMember="Quality" />
+
+        </chart:ClusteredColumnChart.Series>
+    </chart:ClusteredColumnChart>
 </Page>
