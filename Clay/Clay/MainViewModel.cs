@@ -35,7 +35,7 @@ namespace Clay
                 {
                     q = 3;
                 }
-                _qualitylot.Add(new QualityLot() { Quality = q, Lot = int.Parse(a.lot) });
+                _qualitylot.Add(new QualityLot() { Quality = q, Lot = double.Parse(a.lot) });
             }
 
             //_populations.Add(new Population() { Name = "China", Count = 1340 });
