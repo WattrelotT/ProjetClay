@@ -46,7 +46,7 @@ namespace Clay
             layout = new List<string>();
             component = new List<string>();
 
-            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Alexandre\Documents\GitHubVisualStudio\ProjetClay\Clay\Clay\Resources\01092016.xml");
+            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\09092016.xml");
             DataAcess MonDataAcess = new DataAcess();
             MonDataAcess.SetData(MalistDeData);
             dataGrid.DataContext = MonDataAcess.GetAllData();
@@ -88,7 +88,8 @@ namespace Clay
 
         private void Graphique_Click(object sender, RoutedEventArgs e)
         {
-            
+            Graphics FenetreGraph = new Graphics();
+            FenetreGraph.Show();
         }
 
         private void Init()
