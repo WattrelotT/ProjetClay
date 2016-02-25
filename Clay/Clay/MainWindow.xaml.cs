@@ -41,9 +41,17 @@ namespace Clay
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
 
-            MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Alexandre\Documents\GitHubVisualStudio\ProjetClay\Clay\Clay\Resources\02092016.xml");
-            DataAcess MonDataAcess = new DataAcess();
-            MonDataAcess.SetData(MalistDeData);
+            string sPath = @"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\";
+            foreach (string sFileName in System.IO.Directory.GetFiles(sPath))
+            {
+                if (System.IO.Path.GetExtension(sFileName) == ".xml")
+                {
+                    MalistDeData = MonParseurXml.LectureXML(sFileName);
+                    DataAcess MonDataAcess = new DataAcess();
+                    MonDataAcess.SetData(MalistDeData);
+                    MalistDeData.Clear();
+                }
+            }
             Init();
             
         }
@@ -78,7 +86,6 @@ namespace Clay
                 {
                     quality.Add(item.quality);
                 }
-
                 if (!isInList(layout, item.layout.ToString()))
                 {
                     layout.Add(item.layout.ToString());
@@ -337,8 +344,6 @@ namespace Clay
                            (_date == "" || lotItem.date.ToString() == _date)
                      select lotItem.layout.ToString();
             lColor = col.Distinct().ToList();
-
-
             
             //LotDropDown.Items.Clear();
             lot = lLot;
@@ -380,7 +385,6 @@ namespace Clay
                 }
                 switch (color)
                 {
-
                     case "Green":
                         cell.Background = new SolidColorBrush(Colors.DarkGreen);
                         cell.Foreground = new SolidColorBrush(Colors.White);
@@ -421,7 +425,6 @@ namespace Clay
                         cell.Background = new SolidColorBrush(Colors.Transparent);
                         cell.Foreground = new SolidColorBrush(Colors.Black);
                         break;
-
                 }
             }
         }
@@ -430,48 +433,37 @@ namespace Clay
         private void Extraire_Click(object sender, RoutedEventArgs e)
         {
             InitializeComponent();
-            progressBar.Visibility = Visibility.Visible;
-            progressBar.IsIndeterminate = true;
             ParseurXml MonParseurXml = new ParseurXml();
-            //List<Data> MalistDeData = new List<Data>();
-            //MalistDeData = MonParseurXml.LectureXML(@"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\lot.xml")
-
-            // ... Set SelectedItem as Window Title.
             var value = MonthDropDown.SelectedItem;
-
-
-            string pMoisAnnee = value.ToString();
-
-            List<Data> ListeTrier = new List<Data>();
-            DataAcess MonDataAcess = new DataAcess();
-           
-
-            foreach (var item in MonDataAcess.GetAllData())
+            if (value != null)
             {
-                
-                if (item.date.ToString("MMyyyy") == pMoisAnnee)
+                progressBar.Visibility = Visibility.Visible;
+                progressBar.IsIndeterminate = true;
+                string pMoisAnnee = value.ToString();
+
+                List<Data> ListeTrier = new List<Data>();
+                DataAcess MonDataAcess = new DataAcess();
+
+                foreach (var item in MonDataAcess.GetAllData())
                 {
-                    ListeTrier.Add(item);
+                    if (item.date.ToString("MMyyyy") == pMoisAnnee)
+                    {
+                        ListeTrier.Add(item);
+                    }
                 }
-            }
 
-            new Thread((ThreadStart)delegate
-            {
-                //do time-consuming work here
-            MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
-                Thread.Sleep(2000);
-                //then dispatch back to the UI thread to update the progress bar
-                Dispatcher.Invoke((ThreadStart)delegate
+                new Thread((ThreadStart)delegate
                 {
-                    progressBar.Visibility = Visibility.Hidden;
-                });
-
-            }).Start();
-
-            
-
+                    //do time-consuming work here
+                    MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
+                    Thread.Sleep(2000);
+                    //then dispatch back to the UI thread to update the progress bar
+                    Dispatcher.Invoke((ThreadStart)delegate
+                    {
+                        progressBar.Visibility = Visibility.Hidden;
+                    });
+                }).Start();
+            }  
         }
-
-
     }
 }
