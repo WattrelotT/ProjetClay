@@ -94,9 +94,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Dataold.cs" />
-    <Compile Include="Graphics.xaml.cs">
-      <DependentUpon>Graphics.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
