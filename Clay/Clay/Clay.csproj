@@ -72,6 +72,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Couleur.cs" />
+    <Compile Include="GraphNombreLotColor.xaml.cs">
+      <DependentUpon>GraphNombreLotColor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphPerformanceLayout.xaml.cs">
+      <DependentUpon>GraphPerformanceLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphQualityComponent.xaml.cs">
+      <DependentUpon>GraphQualityComponent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -81,6 +91,18 @@
     <Compile Include="Population.cs" />
     <Compile Include="QualityComponent.cs" />
     <Compile Include="QualityLot.cs" />
+    <Page Include="GraphNombreLotColor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphPerformanceLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphQualityComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
