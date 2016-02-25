@@ -52,6 +52,10 @@
                 <DataGridTextColumn Binding="{Binding timecode}" Header="TimeCode"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="142" Margin="53,501,0,0" VerticalAlignment="Top" Width="216">
+            <Button x:Name="Extraire" Content="Extraire" HorizontalAlignment="Left" Height="64" Margin="9,55,0,0" VerticalAlignment="Top" Width="196" Click="Extraire_Click"/>
+        </Border>
+        <ComboBox x:Name="MonthDropDown" ItemsSource="{Binding Path=Month}" SelectionChanged="ComboBox_SelectionChanged_Month" HorizontalAlignment="Left" Margin="64,523,0,0" VerticalAlignment="Top" Width="194"/>
     </Grid>
 
 </Window>
