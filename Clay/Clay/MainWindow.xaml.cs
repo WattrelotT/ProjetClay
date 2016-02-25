@@ -45,7 +45,7 @@ namespace Clay
             DataAcess MonDataAcess = new DataAcess();
             MonDataAcess.SetData(MalistDeData);
             Init();
-
+            
         }
 
         private void Graphique_Click(object sender, RoutedEventArgs e)
@@ -58,7 +58,7 @@ namespace Clay
         {
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
-
+            
             lot = new List<string>();
             quality = new List<string>();
             performance = new List<string>();
@@ -99,7 +99,7 @@ namespace Clay
                 {
                     month.Add(item.date.ToString("MMyyyy"));
                 }
-
+                
             }
 
             LotDropDown.ItemsSource = lot;
@@ -170,7 +170,7 @@ namespace Clay
                           (_lot == "" || lotItem.lot == _lot) &&
                           (_color == "" || lotItem.colorbound == _color) &&
                           (_date == "" || lotItem.date.ToString() == _date)
-                        select lotItem;
+                    select lotItem;
             dataGrid.DataContext = items.ToList();
             dataGrid.ItemsSource = items.ToList();
 
@@ -326,7 +326,7 @@ namespace Clay
                           (_component == "" || lotItem.component == _component) &&
                           (_color == "" || lotItem.colorbound == _color) &&
                           (_date == "" || lotItem.date.ToString() == _date)
-                     select lotItem.layout.ToString();
+                    select lotItem.layout.ToString();
             lLayout = la.Distinct().ToList();
             var col = from lotItem in MalistDeData
                      where (_quality == "" || lotItem.quality == _quality) &&
@@ -339,7 +339,7 @@ namespace Clay
             lColor = col.Distinct().ToList();
 
 
-
+            
             //LotDropDown.Items.Clear();
             lot = lLot;
             LotDropDown.ItemsSource = lot;
@@ -458,7 +458,7 @@ namespace Clay
             new Thread((ThreadStart)delegate
             {
                 //do time-consuming work here
-                MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
+            MonParseurXml.WriteXmlDependMonth(ListeTrier, pMoisAnnee);
                 Thread.Sleep(2000);
                 //then dispatch back to the UI thread to update the progress bar
                 Dispatcher.Invoke((ThreadStart)delegate
