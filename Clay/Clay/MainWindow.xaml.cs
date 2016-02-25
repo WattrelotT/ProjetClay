@@ -51,7 +51,7 @@ namespace Clay
                 {
                     MalistDeData = MonParseurXml.LectureXML(sFileName);
             
-                    MonDataAcess.SetData(MalistDeData);
+            MonDataAcess.SetData(MalistDeData);
                     MalistDeData.Clear();
                 }
             }
@@ -96,9 +96,25 @@ namespace Clay
         private void QualityComponent_Click(object sender, RoutedEventArgs e)
         {
             MainPage graph = new MainPage(ListeDataGraph);
+            GraphQualityComponent graph2 = new GraphQualityComponent(ListeDataGraph);
+            GraphPerformanceLayout graph3 = new GraphPerformanceLayout(ListeDataGraph);
+            GraphNombreLotColor graph4 = new GraphNombreLotColor(ListeDataGraph);
+
             var w = new Window();
             w.Content = graph;
             w.Show();
+
+            var w1 = new Window();
+            w1.Content = graph2;
+            w1.Show();
+
+            var w2 = new Window();
+            w2.Content = graph3;
+            w2.Show();
+
+            var w3 = new Window();
+            w3.Content = graph4;
+            w3.Show();
         }
 
         private void NumberLotColor_Click(object sender, RoutedEventArgs e)
