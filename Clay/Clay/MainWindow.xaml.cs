@@ -44,14 +44,13 @@ namespace Clay
             List<Data> MalistDeData = new List<Data>();
             ParseurXml MonParseurXml = new ParseurXml();
 
-            string sPath = @"C:\Users\eithi\Source\Repos\ProjetClay\Clay\Clay\Resources\";
-            DataAcess MonDataAcess = new DataAcess();
+            string sPath = @"C:\Users\Thomas\Source\Repos\ProjetClay\Clay\Clay\Resources\";
             foreach (string sFileName in System.IO.Directory.GetFiles(sPath))
             {
                 if (System.IO.Path.GetExtension(sFileName) == ".xml")
                 {
                     MalistDeData = MonParseurXml.LectureXML(sFileName);
-            
+            DataAcess MonDataAcess = new DataAcess();
             MonDataAcess.SetData(MalistDeData);
                     MalistDeData.Clear();
                 }
