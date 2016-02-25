@@ -9,24 +9,42 @@ namespace Clay
 {
     public class MainViewModel
     {
-        private readonly ObservableCollection<Population> _populations = new ObservableCollection<Population>();
-        public ObservableCollection<Population> Populations
+        private readonly ObservableCollection<QualityLot> _qualitylot = new ObservableCollection<QualityLot>();
+        public ObservableCollection<QualityLot> QualityLot
         {
             get
             {
-                return _populations;
+                return _qualitylot;
             }
         }
 
-        public MainViewModel()
+        public MainViewModel(List<ClayData.Data> MalistDeData)
         {
-            _populations.Add(new Population() { Name = "China", Count = 1340 });
-            _populations.Add(new Population() { Name = "India", Count = 1220 });
-            _populations.Add(new Population() { Name = "United States", Count = 309 });
-            _populations.Add(new Population() { Name = "Indonesia", Count = 240 });
-            _populations.Add(new Population() { Name = "Brazil", Count = 195 });
-            _populations.Add(new Population() { Name = "Pakistan", Count = 174 });
-            _populations.Add(new Population() { Name = "Nigeria", Count = 158 });
+            foreach (var a in MalistDeData)
+            {
+                int q;
+                if(a.quality == "Low")
+                {
+                    q = 1;
+                }
+                else if(a.quality == "Medium")
+                {
+                    q = 2;
+                }
+                else
+                {
+                    q = 3;
+                }
+                _qualitylot.Add(new QualityLot() { Quality = q, Lot = int.Parse(a.lot) });
+            }
+
+            //_populations.Add(new Population() { Name = "China", Count = 1340 });
+            //_populations.Add(new Population() { Name = "India", Count = 1220 });
+            //_populations.Add(new Population() { Name = "United States", Count = 309 });
+            //_populations.Add(new Population() { Name = "Indonesia", Count = 240 });
+            //_populations.Add(new Population() { Name = "Brazil", Count = 195 });
+            //_populations.Add(new Population() { Name = "Pakistan", Count = 174 });
+            //_populations.Add(new Population() { Name = "Nigeria", Count = 158 });
         }
     }
 }
